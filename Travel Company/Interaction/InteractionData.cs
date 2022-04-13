@@ -251,7 +251,7 @@ namespace Travel_Company.Interaction
             try
             {
                 FormMain.connection.Open();
-                const string sql = "INSERT INTO TravelAgency_Excursion (TRAVELAGENCY_ID, EXCURSION_ID, TRAVELAGENCY_EXCURSION_SOLD) VALUES (@TRAVELAGENCY_ID, @EXCURSION_ID, @TRAVELAGENCY_EXCURSION_SOLD) SELECT SCOPE_IDENTITY()";
+                const string sql = "INSERT INTO Service (TRAVELAGENCY_ID, EXCURSION_ID, SERVICE_EXCURSION_SOLD) VALUES (@TRAVELAGENCY_ID, @EXCURSION_ID, @SERVICE_EXCURSION_SOLD) SELECT SCOPE_IDENTITY()";
                 using (SqlCommand sqlCommand = new SqlCommand(sql, FormMain.connection))
                 {
                     sqlCommand.Parameters.Add(new SqlParameter("@TRAVELAGENCY_ID", SqlDbType.Int));
@@ -260,8 +260,8 @@ namespace Travel_Company.Interaction
                     sqlCommand.Parameters.Add(new SqlParameter("@EXCURSION_ID", SqlDbType.Int));
                     sqlCommand.Parameters["@EXCURSION_ID"].Value = Convert.ToInt32(Program.formMain.textBox52.Text);
 
-                    sqlCommand.Parameters.Add(new SqlParameter("@TRAVELAGENCY_EXCURSION_SOLD", SqlDbType.Int));
-                    sqlCommand.Parameters["@TRAVELAGENCY_EXCURSION_SOLD"].Value = Convert.ToInt32(Program.formMain.textBox43.Text);
+                    sqlCommand.Parameters.Add(new SqlParameter("@SERVICE_EXCURSION_SOLD", SqlDbType.Int));
+                    sqlCommand.Parameters["@SERVICE_EXCURSION_SOLD"].Value = Convert.ToInt32(Program.formMain.textBox43.Text);
 
                     sqlCommand.ExecuteNonQuery();
                 }
@@ -285,14 +285,45 @@ namespace Travel_Company.Interaction
             try
             {
                 FormMain.connection.Open();
-                const string sql = "INSERT INTO TourOperator_Excursion (TOUROPERATOR_ID, EXCURSION_ID) VALUES (@TOUROPERATOR_ID, @EXCURSION_ID) SELECT SCOPE_IDENTITY()";
+                const string sql = "INSERT INTO Provides (TOUROPERATOR_ID, SERVICE_ID) VALUES (@TOUROPERATOR_ID, @SERVICE_ID) SELECT SCOPE_IDENTITY()";
                 using (SqlCommand sqlCommand = new SqlCommand(sql, FormMain.connection))
                 {
                     sqlCommand.Parameters.Add(new SqlParameter("@TOUROPERATOR_ID", SqlDbType.Int));
                     sqlCommand.Parameters["@TOUROPERATOR_ID"].Value = Convert.ToInt32(Program.formMain.textBox49.Text);
 
-                    sqlCommand.Parameters.Add(new SqlParameter("@EXCURSION_ID", SqlDbType.Int));
-                    sqlCommand.Parameters["@EXCURSION_ID"].Value = Convert.ToInt32(Program.formMain.textBox50.Text);
+                    sqlCommand.Parameters.Add(new SqlParameter("@SERVICE_ID", SqlDbType.Int));
+                    sqlCommand.Parameters["@SERVICE_ID"].Value = Convert.ToInt32(Program.formMain.textBox50.Text);
+
+                    sqlCommand.ExecuteNonQuery();
+                }
+                Program.formMain.toolStripStatusLabel2.Text = "Данные добавлены";
+            }
+            catch (Exception ex)
+            {
+                Program.formMain.toolStripStatusLabel2.Text = $"Ошибка! {ex.Message}";
+            }
+            finally
+            {
+                FormMain.connection.Close();
+                Program.formMain.Reload(Program.formMain.comboBox.Text);
+            }
+        }
+
+        public void buttonAddPromotes()
+        {
+            if (Program.formMain.Test() != true) return;
+            if (Program.formMain.LoginAdmin() == false) return;
+            try
+            {
+                FormMain.connection.Open();
+                const string sql = "INSERT INTO Promotes (SERVICE_ID, TOURIST_ID) VALUES (@SERVICE_ID, @TOURIST_ID) SELECT SCOPE_IDENTITY()";
+                using (SqlCommand sqlCommand = new SqlCommand(sql, FormMain.connection))
+                {
+                    sqlCommand.Parameters.Add(new SqlParameter("@SERVICE_ID", SqlDbType.Int));
+                    sqlCommand.Parameters["@SERVICE_ID"].Value = Convert.ToInt32(Program.formMain.textBox53.Text);
+
+                    sqlCommand.Parameters.Add(new SqlParameter("@TOURIST_ID", SqlDbType.Int));
+                    sqlCommand.Parameters["@TOURIST_ID"].Value = Convert.ToInt32(Program.formMain.textBox51.Text);
 
                     sqlCommand.ExecuteNonQuery();
                 }
@@ -339,17 +370,21 @@ namespace Travel_Company.Interaction
                             sqlCommand.Parameters.Add(new SqlParameter("@Name", SqlDbType.NChar, 50));
                             sqlCommand.Parameters["@Name"].Value = Program.formMain.textBox33.Text;
                             break;
-                        case "TourOperator_Excursion":
-                            sqlCommand.Parameters.Add(new SqlParameter("@ID", SqlDbType.Int));
-                            sqlCommand.Parameters["@ID"].Value = Convert.ToInt32(Program.formMain.textBox46.Text);
-                            break;
                         case "Excursion":
                             sqlCommand.Parameters.Add(new SqlParameter("@Name", SqlDbType.NChar, 50));
                             sqlCommand.Parameters["@Name"].Value = Program.formMain.textBox8.Text;
                             break;
-                        case "TravelAgency_Excursion":
+                        case "Provides":
+                            sqlCommand.Parameters.Add(new SqlParameter("@ID", SqlDbType.Int));
+                            sqlCommand.Parameters["@ID"].Value = Convert.ToInt32(Program.formMain.textBox46.Text);
+                            break;
+                        case "Service":
                             sqlCommand.Parameters.Add(new SqlParameter("@ID", SqlDbType.Int));
                             sqlCommand.Parameters["@ID"].Value = Convert.ToInt32(Program.formMain.textBox44.Text);
+                            break;
+                        case "Promotes":
+                            sqlCommand.Parameters.Add(new SqlParameter("@ID", SqlDbType.Int));
+                            sqlCommand.Parameters["@ID"].Value = Convert.ToInt32(Program.formMain.textBox47.Text);
                             break;
                     }
 

@@ -12,7 +12,7 @@ namespace Travel_Company
         public static SqlConnection connection = new SqlConnection(Properties.Settings.Default.connString);
         readonly Interaction.InteractionData interactionData = new Interaction.InteractionData();
         readonly Interaction.InteractionTool interactionTool = new Interaction.InteractionTool();
-        WebClient client = new WebClient();
+        readonly WebClient client = new WebClient();
 
         public SaveFileDialog saveFileDialogBack = new SaveFileDialog();
         public OpenFileDialog openFileDialogSQL = new OpenFileDialog();
@@ -106,17 +106,21 @@ namespace Travel_Company
                             Visibl();
                             panelTravelAgency.Visible = true;
                             break;
-                        case "TourOperator_Excursion":
-                            Visibl();
-                            panelTourOperator_Excursion.Visible = true;
-                            break;
                         case "Excursion":
                             Visibl();
                             panelExcursion.Visible = true;
                             break;
-                        case "TravelAgency_Excursion":
+                        case "Provides":
+                            Visibl();
+                            panelTourOperator_Excursion.Visible = true;
+                            break;
+                        case "Service":
                             Visibl();
                             panelTravelAgency_Excursion.Visible = true;
+                            break;
+                        case "Promotes":
+                            Visibl();
+                            panelPromotes.Visible = true;
                             break;
                         default:
                             Visibl();
@@ -184,7 +188,7 @@ namespace Travel_Company
 
         private void buttonSearchTravelAgency_Excursion_Click(object sender, EventArgs e)
         {
-            const string sql = "SELECT * FROM TravelAgency_Excursion WHERE TRAVELAGENCY_EXCURSION_ID = @ID";
+            const string sql = "SELECT * FROM Service WHERE SERVICE_ID = @ID";
             interactionData.Search(sql);               
         }
 
@@ -192,7 +196,15 @@ namespace Travel_Company
 
         private void buttonSearchTourOperator_Excursion_Click(object sender, EventArgs e)
         {
-            const string sql = "SELECT * FROM TourOperator_Excursion WHERE TOUROPERATOR_EXCURSION_ID = @ID";
+            const string sql = "SELECT * FROM Provides WHERE PROVIDES_ID = @ID";
+            interactionData.Search(sql);
+        }
+
+        private void buttonAddPromotes_Click(object sender, EventArgs e) => interactionData.buttonAddPromotes();
+
+        private void buttonSearchPromotes_Click(object sender, EventArgs e)
+        {
+            const string sql = "SELECT * FROM Promotes WHERE PROMOTES_ID = @ID";
             interactionData.Search(sql);
         }
 
@@ -337,15 +349,15 @@ namespace Travel_Company
             try
             {
                 Uri uri = new Uri("https://github.com/GICK00/Travel_Company/blob/main/Ver.txt");
-                string ver = "Ver. Alpha 0.5.0 T_C";
+                string ver = "Ver. Alpha 0.6.0 T_C";
                 if (client.DownloadString(uri).Contains(ver))
                 {
-
+                    return;
                 }
                 else
                 {
                     string text = "Доступна новая версия приложения.\r\nВаша текущая версия." + ver + "\r\nОбновить программу?";
-                    DialogResult result = MessageBox.Show(text, "Обновление", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    DialogResult result = MessageBox.Show(text, "Достуно новое обновление", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (result == DialogResult.Yes)
                     {
                         System.Diagnostics.Process.Start("https://github.com/GICK00/Travel_Company");
@@ -354,7 +366,6 @@ namespace Travel_Company
             }
             catch (Exception)
             {
-
             }
         }
 

@@ -36,11 +36,20 @@ namespace Travel_Company
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.войтиКакАдминистраторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.войтиКакГостьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выйтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ButtonInfo = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripSeparator();
             this.ButtonReconnectionBD = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.выполнитьЗапросToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.создатьРезервнуюКопиюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.восстановитьБазуДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.очиститьБазуДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -177,15 +186,17 @@ namespace Travel_Company
             this.label51 = new System.Windows.Forms.Label();
             this.buttonSearchTourOperator_Excursion = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.войтиКакАдминистраторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.войтиКакГостьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выйтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.выполнитьЗапросToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.создатьРезервнуюКопиюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.восстановитьБазуДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.очиститьБазуДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelPromotes = new System.Windows.Forms.Panel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.buttonDeletedPromotes = new System.Windows.Forms.Button();
+            this.label52 = new System.Windows.Forms.Label();
+            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.buttonAddPromotes = new System.Windows.Forms.Button();
+            this.buttonClearStr = new System.Windows.Forms.Button();
+            this.label54 = new System.Windows.Forms.Label();
+            this.buttonSearchPromotes = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panelTourist.SuspendLayout();
@@ -195,6 +206,7 @@ namespace Travel_Company
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelTravelAgency_Excursion.SuspendLayout();
             this.panelTourOperator_Excursion.SuspendLayout();
+            this.panelPromotes.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonAddTourist
@@ -262,6 +274,41 @@ namespace Travel_Company
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripDropDownButton2
+            // 
+            this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.войтиКакАдминистраторToolStripMenuItem,
+            this.войтиКакГостьToolStripMenuItem,
+            this.выйтиToolStripMenuItem});
+            this.toolStripDropDownButton2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
+            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(105, 22);
+            this.toolStripDropDownButton2.Text = "Пользователи ";
+            // 
+            // войтиКакАдминистраторToolStripMenuItem
+            // 
+            this.войтиКакАдминистраторToolStripMenuItem.Name = "войтиКакАдминистраторToolStripMenuItem";
+            this.войтиКакАдминистраторToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.войтиКакАдминистраторToolStripMenuItem.Text = "Войти как Администратор";
+            this.войтиКакАдминистраторToolStripMenuItem.Click += new System.EventHandler(this.войтиКакАдминистраторToolStripMenuItem_Click);
+            // 
+            // войтиКакГостьToolStripMenuItem
+            // 
+            this.войтиКакГостьToolStripMenuItem.Name = "войтиКакГостьToolStripMenuItem";
+            this.войтиКакГостьToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.войтиКакГостьToolStripMenuItem.Text = "Войти как Гость";
+            this.войтиКакГостьToolStripMenuItem.Click += new System.EventHandler(this.войтиКакГостьToolStripMenuItem_Click);
+            // 
+            // выйтиToolStripMenuItem
+            // 
+            this.выйтиToolStripMenuItem.Name = "выйтиToolStripMenuItem";
+            this.выйтиToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.выйтиToolStripMenuItem.Text = "Выйти";
+            this.выйтиToolStripMenuItem.Click += new System.EventHandler(this.выйтиToolStripMenuItem_Click);
+            // 
             // ButtonInfo
             // 
             this.ButtonInfo.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -299,6 +346,49 @@ namespace Travel_Company
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.выполнитьЗапросToolStripMenuItem,
+            this.создатьРезервнуюКопиюToolStripMenuItem,
+            this.восстановитьБазуДанныхToolStripMenuItem,
+            this.очиститьБазуДанныхToolStripMenuItem});
+            this.toolStripDropDownButton1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(152, 22);
+            this.toolStripDropDownButton1.Text = "Работа с базой данных";
+            // 
+            // выполнитьЗапросToolStripMenuItem
+            // 
+            this.выполнитьЗапросToolStripMenuItem.Name = "выполнитьЗапросToolStripMenuItem";
+            this.выполнитьЗапросToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.выполнитьЗапросToolStripMenuItem.Text = "Выполнить запрос ";
+            this.выполнитьЗапросToolStripMenuItem.Click += new System.EventHandler(this.выполнитьЗапросToolStripMenuItem_Click);
+            // 
+            // создатьРезервнуюКопиюToolStripMenuItem
+            // 
+            this.создатьРезервнуюКопиюToolStripMenuItem.Name = "создатьРезервнуюКопиюToolStripMenuItem";
+            this.создатьРезервнуюКопиюToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.создатьРезервнуюКопиюToolStripMenuItem.Text = "Создать резервную копию";
+            this.создатьРезервнуюКопиюToolStripMenuItem.Click += new System.EventHandler(this.создатьРезервнуюКопиюToolStripMenuItem_Click);
+            // 
+            // восстановитьБазуДанныхToolStripMenuItem
+            // 
+            this.восстановитьБазуДанныхToolStripMenuItem.Name = "восстановитьБазуДанныхToolStripMenuItem";
+            this.восстановитьБазуДанныхToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.восстановитьБазуДанныхToolStripMenuItem.Text = "Восстановить базу данных";
+            this.восстановитьБазуДанныхToolStripMenuItem.Click += new System.EventHandler(this.восстановитьБазуДанныхToolStripMenuItem_Click);
+            // 
+            // очиститьБазуДанныхToolStripMenuItem
+            // 
+            this.очиститьБазуДанныхToolStripMenuItem.Name = "очиститьБазуДанныхToolStripMenuItem";
+            this.очиститьБазуДанныхToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.очиститьБазуДанныхToolStripMenuItem.Text = "Очистить базу данных";
+            this.очиститьБазуДанныхToolStripMenuItem.Click += new System.EventHandler(this.очиститьБазуДанныхToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -1487,6 +1577,7 @@ namespace Travel_Company
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.Size = new System.Drawing.Size(1043, 281);
             this.dataGridView1.TabIndex = 42;
@@ -1537,7 +1628,7 @@ namespace Travel_Company
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(2, 44);
+            this.label44.Location = new System.Drawing.Point(2, 79);
             this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(131, 28);
@@ -1546,7 +1637,7 @@ namespace Travel_Company
             // 
             // textBox43
             // 
-            this.textBox43.Location = new System.Drawing.Point(2, 72);
+            this.textBox43.Location = new System.Drawing.Point(2, 107);
             this.textBox43.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox43.Name = "textBox43";
             this.textBox43.Size = new System.Drawing.Size(99, 20);
@@ -1568,7 +1659,7 @@ namespace Travel_Company
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(151, 5);
+            this.label49.Location = new System.Drawing.Point(-1, 42);
             this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(108, 14);
@@ -1577,7 +1668,7 @@ namespace Travel_Company
             // 
             // textBox48
             // 
-            this.textBox48.Location = new System.Drawing.Point(154, 19);
+            this.textBox48.Location = new System.Drawing.Point(2, 56);
             this.textBox48.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox48.Name = "textBox48";
             this.textBox48.Size = new System.Drawing.Size(137, 20);
@@ -1643,7 +1734,6 @@ namespace Travel_Company
             // panelTourOperator_Excursion
             // 
             this.panelTourOperator_Excursion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelTourOperator_Excursion.AutoSize = true;
             this.panelTourOperator_Excursion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panelTourOperator_Excursion.Controls.Add(this.label47);
             this.panelTourOperator_Excursion.Controls.Add(this.textBox46);
@@ -1706,7 +1796,7 @@ namespace Travel_Company
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(154, 5);
+            this.label50.Location = new System.Drawing.Point(2, 41);
             this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(115, 14);
@@ -1718,7 +1808,7 @@ namespace Travel_Company
             this.textBox49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox49.Location = new System.Drawing.Point(154, 19);
+            this.textBox49.Location = new System.Drawing.Point(2, 55);
             this.textBox49.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox49.Name = "textBox49";
             this.textBox49.Size = new System.Drawing.Size(137, 20);
@@ -1776,9 +1866,9 @@ namespace Travel_Company
             this.label51.Location = new System.Drawing.Point(2, 3);
             this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(95, 14);
+            this.label51.Size = new System.Drawing.Size(80, 14);
             this.label51.TabIndex = 7;
-            this.label51.Text = "Номер экскурсии";
+            this.label51.Text = "Номер Service";
             // 
             // buttonSearchTourOperator_Excursion
             // 
@@ -1806,83 +1896,160 @@ namespace Travel_Company
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 44;
             // 
-            // toolStripDropDownButton2
+            // panelPromotes
             // 
-            this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.войтиКакАдминистраторToolStripMenuItem,
-            this.войтиКакГостьToolStripMenuItem,
-            this.выйтиToolStripMenuItem});
-            this.toolStripDropDownButton2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
-            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(105, 22);
-            this.toolStripDropDownButton2.Text = "Пользователи ";
+            this.panelPromotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelPromotes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelPromotes.Controls.Add(this.label48);
+            this.panelPromotes.Controls.Add(this.textBox47);
+            this.panelPromotes.Controls.Add(this.buttonDeletedPromotes);
+            this.panelPromotes.Controls.Add(this.label52);
+            this.panelPromotes.Controls.Add(this.textBox51);
+            this.panelPromotes.Controls.Add(this.textBox53);
+            this.panelPromotes.Controls.Add(this.buttonAddPromotes);
+            this.panelPromotes.Controls.Add(this.buttonClearStr);
+            this.panelPromotes.Controls.Add(this.label54);
+            this.panelPromotes.Controls.Add(this.buttonSearchPromotes);
+            this.panelPromotes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelPromotes.Location = new System.Drawing.Point(604, 362);
+            this.panelPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panelPromotes.Name = "panelPromotes";
+            this.panelPromotes.Size = new System.Drawing.Size(452, 284);
+            this.panelPromotes.TabIndex = 43;
+            this.panelPromotes.Visible = false;
             // 
-            // войтиКакАдминистраторToolStripMenuItem
+            // label48
             // 
-            this.войтиКакАдминистраторToolStripMenuItem.Name = "войтиКакАдминистраторToolStripMenuItem";
-            this.войтиКакАдминистраторToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
-            this.войтиКакАдминистраторToolStripMenuItem.Text = "Войти как Администратор";
-            this.войтиКакАдминистраторToolStripMenuItem.Click += new System.EventHandler(this.войтиКакАдминистраторToolStripMenuItem_Click);
+            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(346, 5);
+            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(99, 14);
+            this.label48.TabIndex = 42;
+            this.label48.Text = "Номер для поиска";
             // 
-            // войтиКакГостьToolStripMenuItem
+            // textBox47
             // 
-            this.войтиКакГостьToolStripMenuItem.Name = "войтиКакГостьToolStripMenuItem";
-            this.войтиКакГостьToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
-            this.войтиКакГостьToolStripMenuItem.Text = "Войти как Гость";
-            this.войтиКакГостьToolStripMenuItem.Click += new System.EventHandler(this.войтиКакГостьToolStripMenuItem_Click);
+            this.textBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox47.Location = new System.Drawing.Point(307, 19);
+            this.textBox47.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox47.Name = "textBox47";
+            this.textBox47.Size = new System.Drawing.Size(140, 20);
+            this.textBox47.TabIndex = 41;
             // 
-            // выйтиToolStripMenuItem
+            // buttonDeletedPromotes
             // 
-            this.выйтиToolStripMenuItem.Name = "выйтиToolStripMenuItem";
-            this.выйтиToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
-            this.выйтиToolStripMenuItem.Text = "Выйти";
-            this.выйтиToolStripMenuItem.Click += new System.EventHandler(this.выйтиToolStripMenuItem_Click);
+            this.buttonDeletedPromotes.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDeletedPromotes.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonDeletedPromotes.Name = "buttonDeletedPromotes";
+            this.buttonDeletedPromotes.Size = new System.Drawing.Size(112, 26);
+            this.buttonDeletedPromotes.TabIndex = 38;
+            this.buttonDeletedPromotes.Text = "Удалить";
+            this.buttonDeletedPromotes.UseVisualStyleBackColor = false;
+            this.buttonDeletedPromotes.Click += new System.EventHandler(this.buttonDeleted_Click);
             // 
-            // toolStripDropDownButton1
+            // label52
             // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.выполнитьЗапросToolStripMenuItem,
-            this.создатьРезервнуюКопиюToolStripMenuItem,
-            this.восстановитьБазуДанныхToolStripMenuItem,
-            this.очиститьБазуДанныхToolStripMenuItem});
-            this.toolStripDropDownButton1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(152, 22);
-            this.toolStripDropDownButton1.Text = "Работа с базой данных";
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(2, 41);
+            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(85, 14);
+            this.label52.TabIndex = 27;
+            this.label52.Text = "Номер туриста";
             // 
-            // выполнитьЗапросToolStripMenuItem
+            // textBox51
             // 
-            this.выполнитьЗапросToolStripMenuItem.Name = "выполнитьЗапросToolStripMenuItem";
-            this.выполнитьЗапросToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.выполнитьЗапросToolStripMenuItem.Text = "Выполнить запрос ";
-            this.выполнитьЗапросToolStripMenuItem.Click += new System.EventHandler(this.выполнитьЗапросToolStripMenuItem_Click);
+            this.textBox51.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox51.Location = new System.Drawing.Point(2, 55);
+            this.textBox51.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox51.Name = "textBox51";
+            this.textBox51.Size = new System.Drawing.Size(137, 20);
+            this.textBox51.TabIndex = 26;
             // 
-            // создатьРезервнуюКопиюToolStripMenuItem
+            // textBox53
             // 
-            this.создатьРезервнуюКопиюToolStripMenuItem.Name = "создатьРезервнуюКопиюToolStripMenuItem";
-            this.создатьРезервнуюКопиюToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.создатьРезервнуюКопиюToolStripMenuItem.Text = "Создать резервную копию";
-            this.создатьРезервнуюКопиюToolStripMenuItem.Click += new System.EventHandler(this.создатьРезервнуюКопиюToolStripMenuItem_Click);
+            this.textBox53.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox53.Location = new System.Drawing.Point(2, 19);
+            this.textBox53.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox53.Name = "textBox53";
+            this.textBox53.Size = new System.Drawing.Size(137, 20);
+            this.textBox53.TabIndex = 19;
             // 
-            // восстановитьБазуДанныхToolStripMenuItem
+            // buttonAddPromotes
             // 
-            this.восстановитьБазуДанныхToolStripMenuItem.Name = "восстановитьБазуДанныхToolStripMenuItem";
-            this.восстановитьБазуДанныхToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.восстановитьБазуДанныхToolStripMenuItem.Text = "Восстановить базу данных";
-            this.восстановитьБазуДанныхToolStripMenuItem.Click += new System.EventHandler(this.восстановитьБазуДанныхToolStripMenuItem_Click);
+            this.buttonAddPromotes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAddPromotes.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAddPromotes.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonAddPromotes.Name = "buttonAddPromotes";
+            this.buttonAddPromotes.Size = new System.Drawing.Size(161, 26);
+            this.buttonAddPromotes.TabIndex = 0;
+            this.buttonAddPromotes.Text = "Добавить строку";
+            this.buttonAddPromotes.UseVisualStyleBackColor = false;
+            this.buttonAddPromotes.Click += new System.EventHandler(this.buttonAddPromotes_Click);
             // 
-            // очиститьБазуДанныхToolStripMenuItem
+            // buttonClearStr
             // 
-            this.очиститьБазуДанныхToolStripMenuItem.Name = "очиститьБазуДанныхToolStripMenuItem";
-            this.очиститьБазуДанныхToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.очиститьБазуДанныхToolStripMenuItem.Text = "Очистить базу данных";
-            this.очиститьБазуДанныхToolStripMenuItem.Click += new System.EventHandler(this.очиститьБазуДанныхToolStripMenuItem_Click);
+            this.buttonClearStr.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonClearStr.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClearStr.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStr.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonClearStr.Name = "buttonClearStr";
+            this.buttonClearStr.Size = new System.Drawing.Size(161, 26);
+            this.buttonClearStr.TabIndex = 17;
+            this.buttonClearStr.Text = "Очистить поля для ввода";
+            this.buttonClearStr.UseVisualStyleBackColor = false;
+            this.buttonClearStr.Click += new System.EventHandler(this.buttonClearStr_Click);
+            // 
+            // label54
+            // 
+            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(2, 3);
+            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(80, 14);
+            this.label54.TabIndex = 7;
+            this.label54.Text = "Номер Service";
+            // 
+            // buttonSearchPromotes
+            // 
+            this.buttonSearchPromotes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSearchPromotes.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSearchPromotes.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonSearchPromotes.Name = "buttonSearchPromotes";
+            this.buttonSearchPromotes.Size = new System.Drawing.Size(161, 26);
+            this.buttonSearchPromotes.TabIndex = 15;
+            this.buttonSearchPromotes.Text = "Найти строку";
+            this.buttonSearchPromotes.UseVisualStyleBackColor = false;
+            this.buttonSearchPromotes.Click += new System.EventHandler(this.buttonSearchPromotes_Click);
             // 
             // FormMain
             // 
@@ -1890,6 +2057,7 @@ namespace Travel_Company
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(1076, 677);
+            this.Controls.Add(this.panelPromotes);
             this.Controls.Add(this.panelTourOperator_Excursion);
             this.Controls.Add(this.panelTravelAgency_Excursion);
             this.Controls.Add(this.panelTourOperator);
@@ -1933,6 +2101,8 @@ namespace Travel_Company
             this.panelTravelAgency_Excursion.PerformLayout();
             this.panelTourOperator_Excursion.ResumeLayout(false);
             this.panelTourOperator_Excursion.PerformLayout();
+            this.panelPromotes.ResumeLayout(false);
+            this.panelPromotes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2096,6 +2266,17 @@ namespace Travel_Company
         private System.Windows.Forms.ToolStripMenuItem войтиКакГостьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выйтиToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelPromotes;
+        private System.Windows.Forms.Label label48;
+        public System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.Button buttonDeletedPromotes;
+        private System.Windows.Forms.Label label52;
+        public System.Windows.Forms.TextBox textBox51;
+        public System.Windows.Forms.TextBox textBox53;
+        private System.Windows.Forms.Button buttonAddPromotes;
+        private System.Windows.Forms.Button buttonClearStr;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Button buttonSearchPromotes;
     }
 }
 
