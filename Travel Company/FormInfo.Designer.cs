@@ -44,7 +44,7 @@ namespace Travel_Company
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkLabel1.Location = new System.Drawing.Point(254, 156);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(115, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(114, 16);
             this.linkLabel1.TabIndex = 1;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "https://t.me/gick85";
@@ -57,7 +57,7 @@ namespace Travel_Company
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkLabel2.Location = new System.Drawing.Point(453, 156);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(160, 16);
+            this.linkLabel2.Size = new System.Drawing.Size(159, 16);
             this.linkLabel2.TabIndex = 2;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "https://github.com/GICK00";
@@ -70,7 +70,7 @@ namespace Travel_Company
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkLabel3.Location = new System.Drawing.Point(142, 204);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(268, 16);
+            this.linkLabel3.Size = new System.Drawing.Size(267, 16);
             this.linkLabel3.TabIndex = 3;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "https://github.com/GICK00/Travel_Company";

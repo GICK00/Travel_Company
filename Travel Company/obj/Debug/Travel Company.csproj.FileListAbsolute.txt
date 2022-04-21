@@ -1,14 +1,15 @@
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\bin\Debug\Travel Company.exe.config
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\bin\Debug\Travel Company.exe
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\bin\Debug\Travel Company.pdb
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel Company.csproj.AssemblyReference.cache
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormDeleted.resources
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormInfo.resources
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormLoad.resources
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormLogin.resources
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormMain.resources
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel_Company.Properties.Resources.resources
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel Company.csproj.GenerateResource.cache
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel Company.csproj.CoreCompileInputs.cache
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel Company.exe
-C:\Users\Dmitryi Gick\source\repos\Travel_Company\Travel Company\obj\Debug\Travel Company.pdb
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\bin\Debug\Travel Company.exe.config
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\bin\Debug\Travel Company.exe
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\bin\Debug\Travel Company.pdb
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel Company.csproj.AssemblyReference.cache
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel Company.csproj.SuggestedBindingRedirects.cache
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormDeleted.resources
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormInfo.resources
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormLoad.resources
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormLogin.resources
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel_Company.FormMain.resources
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel_Company.Properties.Resources.resources
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel Company.csproj.GenerateResource.cache
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel Company.csproj.CoreCompileInputs.cache
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel Company.exe
+C:\Users\DimaF\Desktop\Учеба\Технология разработки и защиты баз данных\Курсач\Курсач\Приложение\Travel_Company\Travel Company\obj\Debug\Travel Company.pdb

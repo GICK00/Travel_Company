@@ -9,6 +9,8 @@ namespace Travel_Company
 {
     public partial class FormMain : Form
     {
+        public string ver = "Ver. Alpha 0.7.0 T_C";
+
         public static SqlConnection connection = new SqlConnection(Properties.Settings.Default.connString);
         readonly Interaction.InteractionData interactionData = new Interaction.InteractionData();
         readonly Interaction.InteractionTool interactionTool = new Interaction.InteractionTool();
@@ -112,11 +114,11 @@ namespace Travel_Company
                             break;
                         case "Provides":
                             Visibl();
-                            panelTourOperator_Excursion.Visible = true;
+                            panelProvides.Visible = true;
                             break;
                         case "Service":
                             Visibl();
-                            panelTravelAgency_Excursion.Visible = true;
+                            panelService.Visible = true;
                             break;
                         case "Promotes":
                             Visibl();
@@ -184,17 +186,17 @@ namespace Travel_Company
             interactionData.Search(sql);
         }
 
-        private void buttonAddTravelAgency_Excursion_Click(object sender, EventArgs e) => interactionData.buttonAddTravelAgency_Excursion();
+        private void buttonAddService_Click(object sender, EventArgs e) => interactionData.buttonAddService();
 
-        private void buttonSearchTravelAgency_Excursion_Click(object sender, EventArgs e)
+        private void buttonSearchService_Click(object sender, EventArgs e)
         {
             const string sql = "SELECT * FROM Service WHERE SERVICE_ID = @ID";
             interactionData.Search(sql);               
         }
 
-        private void buttonAddTourOperator_Excursion_Click(object sender, EventArgs e) => interactionData.buttonAddTourOperator_Excursion();
+        private void buttonAddProvides_Click(object sender, EventArgs e) => interactionData.buttonAddProvides();
 
-        private void buttonSearchTourOperator_Excursion_Click(object sender, EventArgs e)
+        private void buttonSearchProvides_Click(object sender, EventArgs e)
         {
             const string sql = "SELECT * FROM Provides WHERE PROVIDES_ID = @ID";
             interactionData.Search(sql);
@@ -349,7 +351,6 @@ namespace Travel_Company
             try
             {
                 Uri uri = new Uri("https://github.com/GICK00/Travel_Company/blob/main/Ver.txt");
-                string ver = "Ver. Alpha 0.6.0 T_C";
                 if (client.DownloadString(uri).Contains(ver))
                 {
                     return;
@@ -360,6 +361,7 @@ namespace Travel_Company
                     DialogResult result = MessageBox.Show(text, "Достуно новое обновление", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (result == DialogResult.Yes)
                     {
+                        Program.formMain.Close();
                         System.Diagnostics.Process.Start("https://github.com/GICK00/Travel_Company");
                     }
                 }

@@ -8,6 +8,7 @@ namespace Travel_Company
         public FormInfo()
         {
             InitializeComponent();
+            richTextBox1.Text += Program.formMain.ver;
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

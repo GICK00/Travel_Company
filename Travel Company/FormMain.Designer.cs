@@ -161,30 +161,30 @@ namespace Travel_Company
             this.label42 = new System.Windows.Forms.Label();
             this.buttonSearchTourOperator = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panelTravelAgency_Excursion = new System.Windows.Forms.Panel();
+            this.panelService = new System.Windows.Forms.Panel();
             this.label45 = new System.Windows.Forms.Label();
             this.textBox44 = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.textBox43 = new System.Windows.Forms.TextBox();
-            this.buttonDeletedTravelAgency_Excursion = new System.Windows.Forms.Button();
+            this.buttonDeletedService = new System.Windows.Forms.Button();
             this.label49 = new System.Windows.Forms.Label();
             this.textBox48 = new System.Windows.Forms.TextBox();
             this.textBox52 = new System.Windows.Forms.TextBox();
-            this.buttonAddTravelAgency_Excursion = new System.Windows.Forms.Button();
-            this.buttonClearStrTravelAgency_Excursion = new System.Windows.Forms.Button();
+            this.buttonAddService = new System.Windows.Forms.Button();
+            this.buttonClearStrService = new System.Windows.Forms.Button();
             this.label53 = new System.Windows.Forms.Label();
-            this.buttonSearchTravelAgency_Excursion = new System.Windows.Forms.Button();
-            this.panelTourOperator_Excursion = new System.Windows.Forms.Panel();
+            this.buttonSearchService = new System.Windows.Forms.Button();
+            this.panelProvides = new System.Windows.Forms.Panel();
             this.label47 = new System.Windows.Forms.Label();
             this.textBox46 = new System.Windows.Forms.TextBox();
-            this.buttonDeletedTourOperator_Excursion = new System.Windows.Forms.Button();
+            this.buttonDeletedProvides = new System.Windows.Forms.Button();
             this.label50 = new System.Windows.Forms.Label();
             this.textBox49 = new System.Windows.Forms.TextBox();
             this.textBox50 = new System.Windows.Forms.TextBox();
-            this.buttonAddTourOperator_Excursion = new System.Windows.Forms.Button();
-            this.buttonClearStrTourOperator_Excursion = new System.Windows.Forms.Button();
+            this.buttonAddProvides = new System.Windows.Forms.Button();
+            this.buttonClearStrProvides = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
-            this.buttonSearchTourOperator_Excursion = new System.Windows.Forms.Button();
+            this.buttonSearchProvides = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelPromotes = new System.Windows.Forms.Panel();
             this.label48 = new System.Windows.Forms.Label();
@@ -204,8 +204,8 @@ namespace Travel_Company
             this.panelTravelAgency.SuspendLayout();
             this.panelTourOperator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panelTravelAgency_Excursion.SuspendLayout();
-            this.panelTourOperator_Excursion.SuspendLayout();
+            this.panelService.SuspendLayout();
+            this.panelProvides.SuspendLayout();
             this.panelPromotes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1582,30 +1582,30 @@ namespace Travel_Company
             this.dataGridView1.Size = new System.Drawing.Size(1043, 281);
             this.dataGridView1.TabIndex = 42;
             // 
-            // panelTravelAgency_Excursion
+            // panelService
             // 
-            this.panelTravelAgency_Excursion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelTravelAgency_Excursion.AutoSize = true;
-            this.panelTravelAgency_Excursion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panelTravelAgency_Excursion.Controls.Add(this.label45);
-            this.panelTravelAgency_Excursion.Controls.Add(this.textBox44);
-            this.panelTravelAgency_Excursion.Controls.Add(this.label44);
-            this.panelTravelAgency_Excursion.Controls.Add(this.textBox43);
-            this.panelTravelAgency_Excursion.Controls.Add(this.buttonDeletedTravelAgency_Excursion);
-            this.panelTravelAgency_Excursion.Controls.Add(this.label49);
-            this.panelTravelAgency_Excursion.Controls.Add(this.textBox48);
-            this.panelTravelAgency_Excursion.Controls.Add(this.textBox52);
-            this.panelTravelAgency_Excursion.Controls.Add(this.buttonAddTravelAgency_Excursion);
-            this.panelTravelAgency_Excursion.Controls.Add(this.buttonClearStrTravelAgency_Excursion);
-            this.panelTravelAgency_Excursion.Controls.Add(this.label53);
-            this.panelTravelAgency_Excursion.Controls.Add(this.buttonSearchTravelAgency_Excursion);
-            this.panelTravelAgency_Excursion.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelTravelAgency_Excursion.Location = new System.Drawing.Point(604, 365);
-            this.panelTravelAgency_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panelTravelAgency_Excursion.Name = "panelTravelAgency_Excursion";
-            this.panelTravelAgency_Excursion.Size = new System.Drawing.Size(452, 284);
-            this.panelTravelAgency_Excursion.TabIndex = 41;
-            this.panelTravelAgency_Excursion.Visible = false;
+            this.panelService.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelService.AutoSize = true;
+            this.panelService.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelService.Controls.Add(this.label45);
+            this.panelService.Controls.Add(this.textBox44);
+            this.panelService.Controls.Add(this.label44);
+            this.panelService.Controls.Add(this.textBox43);
+            this.panelService.Controls.Add(this.buttonDeletedService);
+            this.panelService.Controls.Add(this.label49);
+            this.panelService.Controls.Add(this.textBox48);
+            this.panelService.Controls.Add(this.textBox52);
+            this.panelService.Controls.Add(this.buttonAddService);
+            this.panelService.Controls.Add(this.buttonClearStrService);
+            this.panelService.Controls.Add(this.label53);
+            this.panelService.Controls.Add(this.buttonSearchService);
+            this.panelService.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelService.Location = new System.Drawing.Point(604, 365);
+            this.panelService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panelService.Name = "panelService";
+            this.panelService.Size = new System.Drawing.Size(452, 284);
+            this.panelService.TabIndex = 41;
+            this.panelService.Visible = false;
             // 
             // label45
             // 
@@ -1643,18 +1643,18 @@ namespace Travel_Company
             this.textBox43.Size = new System.Drawing.Size(99, 20);
             this.textBox43.TabIndex = 39;
             // 
-            // buttonDeletedTravelAgency_Excursion
+            // buttonDeletedService
             // 
-            this.buttonDeletedTravelAgency_Excursion.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonDeletedTravelAgency_Excursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedTravelAgency_Excursion.Location = new System.Drawing.Point(170, 255);
-            this.buttonDeletedTravelAgency_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonDeletedTravelAgency_Excursion.Name = "buttonDeletedTravelAgency_Excursion";
-            this.buttonDeletedTravelAgency_Excursion.Size = new System.Drawing.Size(112, 26);
-            this.buttonDeletedTravelAgency_Excursion.TabIndex = 38;
-            this.buttonDeletedTravelAgency_Excursion.Text = "Удалить";
-            this.buttonDeletedTravelAgency_Excursion.UseVisualStyleBackColor = false;
-            this.buttonDeletedTravelAgency_Excursion.Click += new System.EventHandler(this.buttonDeleted_Click);
+            this.buttonDeletedService.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDeletedService.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonDeletedService.Name = "buttonDeletedService";
+            this.buttonDeletedService.Size = new System.Drawing.Size(112, 26);
+            this.buttonDeletedService.TabIndex = 38;
+            this.buttonDeletedService.Text = "Удалить";
+            this.buttonDeletedService.UseVisualStyleBackColor = false;
+            this.buttonDeletedService.Click += new System.EventHandler(this.buttonDeleted_Click);
             // 
             // label49
             // 
@@ -1682,31 +1682,31 @@ namespace Travel_Company
             this.textBox52.Size = new System.Drawing.Size(137, 20);
             this.textBox52.TabIndex = 19;
             // 
-            // buttonAddTravelAgency_Excursion
+            // buttonAddService
             // 
-            this.buttonAddTravelAgency_Excursion.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonAddTravelAgency_Excursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddTravelAgency_Excursion.Location = new System.Drawing.Point(4, 225);
-            this.buttonAddTravelAgency_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonAddTravelAgency_Excursion.Name = "buttonAddTravelAgency_Excursion";
-            this.buttonAddTravelAgency_Excursion.Size = new System.Drawing.Size(161, 26);
-            this.buttonAddTravelAgency_Excursion.TabIndex = 0;
-            this.buttonAddTravelAgency_Excursion.Text = "Добавить строку";
-            this.buttonAddTravelAgency_Excursion.UseVisualStyleBackColor = false;
-            this.buttonAddTravelAgency_Excursion.Click += new System.EventHandler(this.buttonAddTravelAgency_Excursion_Click);
+            this.buttonAddService.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAddService.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonAddService.Name = "buttonAddService";
+            this.buttonAddService.Size = new System.Drawing.Size(161, 26);
+            this.buttonAddService.TabIndex = 0;
+            this.buttonAddService.Text = "Добавить строку";
+            this.buttonAddService.UseVisualStyleBackColor = false;
+            this.buttonAddService.Click += new System.EventHandler(this.buttonAddService_Click);
             // 
-            // buttonClearStrTravelAgency_Excursion
+            // buttonClearStrService
             // 
-            this.buttonClearStrTravelAgency_Excursion.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonClearStrTravelAgency_Excursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStrTravelAgency_Excursion.Location = new System.Drawing.Point(289, 255);
-            this.buttonClearStrTravelAgency_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonClearStrTravelAgency_Excursion.Name = "buttonClearStrTravelAgency_Excursion";
-            this.buttonClearStrTravelAgency_Excursion.Size = new System.Drawing.Size(161, 26);
-            this.buttonClearStrTravelAgency_Excursion.TabIndex = 17;
-            this.buttonClearStrTravelAgency_Excursion.Text = "Очистить поля для ввода";
-            this.buttonClearStrTravelAgency_Excursion.UseVisualStyleBackColor = false;
-            this.buttonClearStrTravelAgency_Excursion.Click += new System.EventHandler(this.buttonClearStr_Click);
+            this.buttonClearStrService.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStrService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClearStrService.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStrService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonClearStrService.Name = "buttonClearStrService";
+            this.buttonClearStrService.Size = new System.Drawing.Size(161, 26);
+            this.buttonClearStrService.TabIndex = 17;
+            this.buttonClearStrService.Text = "Очистить поля для ввода";
+            this.buttonClearStrService.UseVisualStyleBackColor = false;
+            this.buttonClearStrService.Click += new System.EventHandler(this.buttonClearStr_Click);
             // 
             // label53
             // 
@@ -1718,40 +1718,40 @@ namespace Travel_Company
             this.label53.TabIndex = 7;
             this.label53.Text = "Номер экскурсии";
             // 
-            // buttonSearchTravelAgency_Excursion
+            // buttonSearchService
             // 
-            this.buttonSearchTravelAgency_Excursion.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonSearchTravelAgency_Excursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchTravelAgency_Excursion.Location = new System.Drawing.Point(4, 255);
-            this.buttonSearchTravelAgency_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonSearchTravelAgency_Excursion.Name = "buttonSearchTravelAgency_Excursion";
-            this.buttonSearchTravelAgency_Excursion.Size = new System.Drawing.Size(161, 26);
-            this.buttonSearchTravelAgency_Excursion.TabIndex = 15;
-            this.buttonSearchTravelAgency_Excursion.Text = "Найти строку";
-            this.buttonSearchTravelAgency_Excursion.UseVisualStyleBackColor = false;
-            this.buttonSearchTravelAgency_Excursion.Click += new System.EventHandler(this.buttonSearchTravelAgency_Excursion_Click);
+            this.buttonSearchService.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSearchService.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonSearchService.Name = "buttonSearchService";
+            this.buttonSearchService.Size = new System.Drawing.Size(161, 26);
+            this.buttonSearchService.TabIndex = 15;
+            this.buttonSearchService.Text = "Найти строку";
+            this.buttonSearchService.UseVisualStyleBackColor = false;
+            this.buttonSearchService.Click += new System.EventHandler(this.buttonSearchService_Click);
             // 
-            // panelTourOperator_Excursion
+            // panelProvides
             // 
-            this.panelTourOperator_Excursion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelTourOperator_Excursion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panelTourOperator_Excursion.Controls.Add(this.label47);
-            this.panelTourOperator_Excursion.Controls.Add(this.textBox46);
-            this.panelTourOperator_Excursion.Controls.Add(this.buttonDeletedTourOperator_Excursion);
-            this.panelTourOperator_Excursion.Controls.Add(this.label50);
-            this.panelTourOperator_Excursion.Controls.Add(this.textBox49);
-            this.panelTourOperator_Excursion.Controls.Add(this.textBox50);
-            this.panelTourOperator_Excursion.Controls.Add(this.buttonAddTourOperator_Excursion);
-            this.panelTourOperator_Excursion.Controls.Add(this.buttonClearStrTourOperator_Excursion);
-            this.panelTourOperator_Excursion.Controls.Add(this.label51);
-            this.panelTourOperator_Excursion.Controls.Add(this.buttonSearchTourOperator_Excursion);
-            this.panelTourOperator_Excursion.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelTourOperator_Excursion.Location = new System.Drawing.Point(604, 365);
-            this.panelTourOperator_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panelTourOperator_Excursion.Name = "panelTourOperator_Excursion";
-            this.panelTourOperator_Excursion.Size = new System.Drawing.Size(452, 284);
-            this.panelTourOperator_Excursion.TabIndex = 41;
-            this.panelTourOperator_Excursion.Visible = false;
+            this.panelProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelProvides.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelProvides.Controls.Add(this.label47);
+            this.panelProvides.Controls.Add(this.textBox46);
+            this.panelProvides.Controls.Add(this.buttonDeletedProvides);
+            this.panelProvides.Controls.Add(this.label50);
+            this.panelProvides.Controls.Add(this.textBox49);
+            this.panelProvides.Controls.Add(this.textBox50);
+            this.panelProvides.Controls.Add(this.buttonAddProvides);
+            this.panelProvides.Controls.Add(this.buttonClearStrProvides);
+            this.panelProvides.Controls.Add(this.label51);
+            this.panelProvides.Controls.Add(this.buttonSearchProvides);
+            this.panelProvides.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelProvides.Location = new System.Drawing.Point(604, 365);
+            this.panelProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panelProvides.Name = "panelProvides";
+            this.panelProvides.Size = new System.Drawing.Size(452, 284);
+            this.panelProvides.TabIndex = 41;
+            this.panelProvides.Visible = false;
             // 
             // label47
             // 
@@ -1777,18 +1777,18 @@ namespace Travel_Company
             this.textBox46.Size = new System.Drawing.Size(140, 20);
             this.textBox46.TabIndex = 41;
             // 
-            // buttonDeletedTourOperator_Excursion
+            // buttonDeletedProvides
             // 
-            this.buttonDeletedTourOperator_Excursion.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonDeletedTourOperator_Excursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedTourOperator_Excursion.Location = new System.Drawing.Point(170, 255);
-            this.buttonDeletedTourOperator_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonDeletedTourOperator_Excursion.Name = "buttonDeletedTourOperator_Excursion";
-            this.buttonDeletedTourOperator_Excursion.Size = new System.Drawing.Size(112, 26);
-            this.buttonDeletedTourOperator_Excursion.TabIndex = 38;
-            this.buttonDeletedTourOperator_Excursion.Text = "Удалить";
-            this.buttonDeletedTourOperator_Excursion.UseVisualStyleBackColor = false;
-            this.buttonDeletedTourOperator_Excursion.Click += new System.EventHandler(this.buttonDeleted_Click);
+            this.buttonDeletedProvides.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDeletedProvides.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonDeletedProvides.Name = "buttonDeletedProvides";
+            this.buttonDeletedProvides.Size = new System.Drawing.Size(112, 26);
+            this.buttonDeletedProvides.TabIndex = 38;
+            this.buttonDeletedProvides.Text = "Удалить";
+            this.buttonDeletedProvides.UseVisualStyleBackColor = false;
+            this.buttonDeletedProvides.Click += new System.EventHandler(this.buttonDeleted_Click);
             // 
             // label50
             // 
@@ -1825,37 +1825,37 @@ namespace Travel_Company
             this.textBox50.Size = new System.Drawing.Size(137, 20);
             this.textBox50.TabIndex = 19;
             // 
-            // buttonAddTourOperator_Excursion
+            // buttonAddProvides
             // 
-            this.buttonAddTourOperator_Excursion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.buttonAddProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAddTourOperator_Excursion.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonAddTourOperator_Excursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddTourOperator_Excursion.Location = new System.Drawing.Point(4, 225);
-            this.buttonAddTourOperator_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonAddTourOperator_Excursion.Name = "buttonAddTourOperator_Excursion";
-            this.buttonAddTourOperator_Excursion.Size = new System.Drawing.Size(161, 26);
-            this.buttonAddTourOperator_Excursion.TabIndex = 0;
-            this.buttonAddTourOperator_Excursion.Text = "Добавить строку";
-            this.buttonAddTourOperator_Excursion.UseVisualStyleBackColor = false;
-            this.buttonAddTourOperator_Excursion.Click += new System.EventHandler(this.buttonAddTourOperator_Excursion_Click);
+            this.buttonAddProvides.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAddProvides.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonAddProvides.Name = "buttonAddProvides";
+            this.buttonAddProvides.Size = new System.Drawing.Size(161, 26);
+            this.buttonAddProvides.TabIndex = 0;
+            this.buttonAddProvides.Text = "Добавить строку";
+            this.buttonAddProvides.UseVisualStyleBackColor = false;
+            this.buttonAddProvides.Click += new System.EventHandler(this.buttonAddProvides_Click);
             // 
-            // buttonClearStrTourOperator_Excursion
+            // buttonClearStrProvides
             // 
-            this.buttonClearStrTourOperator_Excursion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.buttonClearStrProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonClearStrTourOperator_Excursion.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonClearStrTourOperator_Excursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStrTourOperator_Excursion.Location = new System.Drawing.Point(289, 255);
-            this.buttonClearStrTourOperator_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonClearStrTourOperator_Excursion.Name = "buttonClearStrTourOperator_Excursion";
-            this.buttonClearStrTourOperator_Excursion.Size = new System.Drawing.Size(161, 26);
-            this.buttonClearStrTourOperator_Excursion.TabIndex = 17;
-            this.buttonClearStrTourOperator_Excursion.Text = "Очистить поля для ввода";
-            this.buttonClearStrTourOperator_Excursion.UseVisualStyleBackColor = false;
-            this.buttonClearStrTourOperator_Excursion.Click += new System.EventHandler(this.buttonClearStr_Click);
+            this.buttonClearStrProvides.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStrProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClearStrProvides.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStrProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonClearStrProvides.Name = "buttonClearStrProvides";
+            this.buttonClearStrProvides.Size = new System.Drawing.Size(161, 26);
+            this.buttonClearStrProvides.TabIndex = 17;
+            this.buttonClearStrProvides.Text = "Очистить поля для ввода";
+            this.buttonClearStrProvides.UseVisualStyleBackColor = false;
+            this.buttonClearStrProvides.Click += new System.EventHandler(this.buttonClearStr_Click);
             // 
             // label51
             // 
@@ -1870,21 +1870,21 @@ namespace Travel_Company
             this.label51.TabIndex = 7;
             this.label51.Text = "Номер Service";
             // 
-            // buttonSearchTourOperator_Excursion
+            // buttonSearchProvides
             // 
-            this.buttonSearchTourOperator_Excursion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.buttonSearchProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSearchTourOperator_Excursion.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonSearchTourOperator_Excursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchTourOperator_Excursion.Location = new System.Drawing.Point(4, 255);
-            this.buttonSearchTourOperator_Excursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.buttonSearchTourOperator_Excursion.Name = "buttonSearchTourOperator_Excursion";
-            this.buttonSearchTourOperator_Excursion.Size = new System.Drawing.Size(161, 26);
-            this.buttonSearchTourOperator_Excursion.TabIndex = 15;
-            this.buttonSearchTourOperator_Excursion.Text = "Найти строку";
-            this.buttonSearchTourOperator_Excursion.UseVisualStyleBackColor = false;
-            this.buttonSearchTourOperator_Excursion.Click += new System.EventHandler(this.buttonSearchTourOperator_Excursion_Click);
+            this.buttonSearchProvides.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSearchProvides.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.buttonSearchProvides.Name = "buttonSearchProvides";
+            this.buttonSearchProvides.Size = new System.Drawing.Size(161, 26);
+            this.buttonSearchProvides.TabIndex = 15;
+            this.buttonSearchProvides.Text = "Найти строку";
+            this.buttonSearchProvides.UseVisualStyleBackColor = false;
+            this.buttonSearchProvides.Click += new System.EventHandler(this.buttonSearchProvides_Click);
             // 
             // panel1
             // 
@@ -2058,8 +2058,8 @@ namespace Travel_Company
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(1076, 677);
             this.Controls.Add(this.panelPromotes);
-            this.Controls.Add(this.panelTourOperator_Excursion);
-            this.Controls.Add(this.panelTravelAgency_Excursion);
+            this.Controls.Add(this.panelProvides);
+            this.Controls.Add(this.panelService);
             this.Controls.Add(this.panelTourOperator);
             this.Controls.Add(this.buttonReload);
             this.Controls.Add(this.panelExcursion);
@@ -2097,10 +2097,10 @@ namespace Travel_Company
             this.panelTourOperator.ResumeLayout(false);
             this.panelTourOperator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panelTravelAgency_Excursion.ResumeLayout(false);
-            this.panelTravelAgency_Excursion.PerformLayout();
-            this.panelTourOperator_Excursion.ResumeLayout(false);
-            this.panelTourOperator_Excursion.PerformLayout();
+            this.panelService.ResumeLayout(false);
+            this.panelService.PerformLayout();
+            this.panelProvides.ResumeLayout(false);
+            this.panelProvides.PerformLayout();
             this.panelPromotes.ResumeLayout(false);
             this.panelPromotes.PerformLayout();
             this.ResumeLayout(false);
@@ -2234,32 +2234,32 @@ namespace Travel_Company
         public System.Windows.Forms.TextBox textBox42;
         public System.Windows.Forms.DataGridView dataGridView1;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.Panel panelTravelAgency_Excursion;
+        private System.Windows.Forms.Panel panelService; 
         private System.Windows.Forms.Label label44;
         public System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.Button buttonDeletedTravelAgency_Excursion;
+        private System.Windows.Forms.Button buttonDeletedService;
         private System.Windows.Forms.Label label49;
         public System.Windows.Forms.TextBox textBox48;
         public System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.Button buttonAddTravelAgency_Excursion;
-        private System.Windows.Forms.Button buttonClearStrTravelAgency_Excursion;
+        private System.Windows.Forms.Button buttonAddService;
+        private System.Windows.Forms.Button buttonClearStrService;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Button buttonSearchTravelAgency_Excursion;
+        private System.Windows.Forms.Button buttonSearchService;
         private System.Windows.Forms.Label label45;
         public System.Windows.Forms.TextBox textBox44;
         private System.Windows.Forms.Label label46;
         public System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.Panel panelTourOperator_Excursion;
+        private System.Windows.Forms.Panel panelProvides;
         private System.Windows.Forms.Label label47;
         public System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.Button buttonDeletedTourOperator_Excursion;
+        private System.Windows.Forms.Button buttonDeletedProvides;
         private System.Windows.Forms.Label label50;
         public System.Windows.Forms.TextBox textBox49;
         public System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.Button buttonAddTourOperator_Excursion;
-        private System.Windows.Forms.Button buttonClearStrTourOperator_Excursion;
+        private System.Windows.Forms.Button buttonAddProvides;
+        private System.Windows.Forms.Button buttonClearStrProvides;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Button buttonSearchTourOperator_Excursion;
+        private System.Windows.Forms.Button buttonSearchProvides;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
         private System.Windows.Forms.ToolStripMenuItem войтиКакАдминистраторToolStripMenuItem;
@@ -2279,4 +2279,3 @@ namespace Travel_Company
         private System.Windows.Forms.Button buttonSearchPromotes;
     }
 }
-

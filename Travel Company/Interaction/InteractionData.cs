@@ -244,7 +244,7 @@ namespace Travel_Company.Interaction
             }
         }
 
-        public void buttonAddTravelAgency_Excursion()
+        public void buttonAddService()
         {
             if (Program.formMain.Test() != true) return;
             if (Program.formMain.LoginAdmin() == false) return;
@@ -278,7 +278,7 @@ namespace Travel_Company.Interaction
             }
         }
 
-        public void buttonAddTourOperator_Excursion()
+        public void buttonAddProvides()
         {
             if (Program.formMain.Test() != true) return;
             if (Program.formMain.LoginAdmin() == false) return;
