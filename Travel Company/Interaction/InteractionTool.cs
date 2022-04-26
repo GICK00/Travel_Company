@@ -10,14 +10,12 @@ namespace Travel_Company.Interaction
         public void выполнитьЗапросToolStripMenuItem()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             if (Program.formMain.openFileDialogSQL.ShowDialog() == DialogResult.Cancel) return;
             try
             {
                 string filename = Program.formMain.openFileDialogSQL.FileName;
-                string fileText = System.IO.File.ReadAllText(filename, Encoding.GetEncoding(1251));
-                string sql = fileText;
-                Program.formMain.textBox7.Text = fileText;
+                string sql = System.IO.File.ReadAllText(filename, Encoding.GetEncoding(1251));
 
                 using (SqlCommand sqlCommand = new SqlCommand(sql, FormMain.connection))
                 {
@@ -40,7 +38,7 @@ namespace Travel_Company.Interaction
         public void очиститьБазуДанныхToolStripMenuItem()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             DialogResult result = MessageBox.Show("Вы уверены, что хотите очистить базу данных?", "Удаление данных.", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result != DialogResult.Yes) return;
             using (SqlCommand sqlCommand = new SqlCommand("DeletedAll", FormMain.connection))
@@ -56,7 +54,7 @@ namespace Travel_Company.Interaction
         public void создатьРезервнуюКопиюToolStripMenuItem()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             if (Program.formMain.saveFileDialogBack.ShowDialog() == DialogResult.Cancel) return;
             string path = Program.formMain.saveFileDialogBack.FileName;
             string sql = @"BACKUP DATABASE[Travel_Company] TO DISK = N'" + path + "' WITH NOFORMAT, NOINIT, NAME = N'Travel_Company-Полная База данных Резервное копирование', SKIP, NOREWIND, NOUNLOAD,  STATS = 10";
@@ -68,7 +66,7 @@ namespace Travel_Company.Interaction
         public void восстановитьБазуДанныхToolStripMenuItem()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             DialogResult result = MessageBox.Show("Вы уверены, что хотите востановить базу данных?", "Восстановление базы данных.", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result != DialogResult.Yes) return;
 

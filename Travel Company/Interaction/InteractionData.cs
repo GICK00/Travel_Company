@@ -9,7 +9,7 @@ namespace Travel_Company.Interaction
         public void buttonAddTourist()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             try
             {
                 FormMain.connection.Open();
@@ -82,7 +82,7 @@ namespace Travel_Company.Interaction
         public void buttonAddExcursion()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             try
             {
                 FormMain.connection.Open();
@@ -138,7 +138,7 @@ namespace Travel_Company.Interaction
         public void buttonAddTravelAgency()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             try
             {
                 FormMain.connection.Open();
@@ -191,7 +191,7 @@ namespace Travel_Company.Interaction
         public void buttonAddlTourOperator()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             try
             {
                 FormMain.connection.Open();
@@ -247,7 +247,7 @@ namespace Travel_Company.Interaction
         public void buttonAddService()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             try
             {
                 FormMain.connection.Open();
@@ -281,7 +281,7 @@ namespace Travel_Company.Interaction
         public void buttonAddProvides()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             try
             {
                 FormMain.connection.Open();
@@ -312,7 +312,7 @@ namespace Travel_Company.Interaction
         public void buttonAddPromotes()
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginAdmin() == false) return;
+            if (Program.formMain.LoginAdmin() != true) return;
             try
             {
                 FormMain.connection.Open();
@@ -343,7 +343,7 @@ namespace Travel_Company.Interaction
         public void Search(string sql)
         {
             if (Program.formMain.Test() != true) return;
-            if (Program.formMain.LoginGuest() == false) return;
+            if (Program.formMain.LoginGuest() != true) return;
             using (SqlCommand sqlCommand = new SqlCommand(sql, FormMain.connection))
             {
                 try

@@ -40,7 +40,9 @@ namespace Travel_Company
             this.войтиКакАдминистраторToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.войтиКакГостьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выйтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ButtonInfo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.ButtonInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.ButtonUpdateApp = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripSeparator();
             this.ButtonReconnectionBD = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
@@ -50,15 +52,11 @@ namespace Travel_Company
             this.создатьРезервнуюКопиюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.восстановитьБазуДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.очиститьБазуДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonSearchTourist = new System.Windows.Forms.Button();
             this.buttonClearStrTourist = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -109,8 +107,6 @@ namespace Travel_Company
             this.buttonClearStrExcursion = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonSearchExcursion = new System.Windows.Forms.Button();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.label24 = new System.Windows.Forms.Label();
             this.panelTravelAgency = new System.Windows.Forms.Panel();
             this.buttonDeletedTravelAgency = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
@@ -185,7 +181,6 @@ namespace Travel_Company
             this.buttonClearStrProvides = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
             this.buttonSearchProvides = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panelPromotes = new System.Windows.Forms.Panel();
             this.label48 = new System.Windows.Forms.Label();
             this.textBox47 = new System.Windows.Forms.TextBox();
@@ -197,6 +192,7 @@ namespace Travel_Company
             this.buttonClearStr = new System.Windows.Forms.Button();
             this.label54 = new System.Windows.Forms.Label();
             this.buttonSearchPromotes = new System.Windows.Forms.Button();
+            this.panelDefault = new System.Windows.Forms.Panel();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panelTourist.SuspendLayout();
@@ -213,7 +209,7 @@ namespace Travel_Company
             // 
             this.buttonAddTourist.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAddTourist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddTourist.Location = new System.Drawing.Point(2, 222);
+            this.buttonAddTourist.Location = new System.Drawing.Point(2, 527);
             this.buttonAddTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonAddTourist.Name = "buttonAddTourist";
             this.buttonAddTourist.Size = new System.Drawing.Size(161, 26);
@@ -261,16 +257,16 @@ namespace Travel_Company
             this.toolStrip1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton2,
-            this.ButtonInfo,
+            this.toolStripDropDownButton3,
             this.toolStripLabel1,
             this.ButtonReconnectionBD,
             this.toolStripLabel3,
             this.toolStripSeparator1,
-            this.toolStripDropDownButton1,
-            this.toolStripSeparator2});
+            this.toolStripDropDownButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1076, 25);
+            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip1.Size = new System.Drawing.Size(1221, 25);
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -309,16 +305,34 @@ namespace Travel_Company
             this.выйтиToolStripMenuItem.Text = "Выйти";
             this.выйтиToolStripMenuItem.Click += new System.EventHandler(this.выйтиToolStripMenuItem_Click);
             // 
+            // toolStripDropDownButton3
+            // 
+            this.toolStripDropDownButton3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ButtonInfo,
+            this.ButtonUpdateApp});
+            this.toolStripDropDownButton3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton3.Image")));
+            this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
+            this.toolStripDropDownButton3.Size = new System.Drawing.Size(69, 22);
+            this.toolStripDropDownButton3.Text = "Справка";
+            // 
             // ButtonInfo
             // 
-            this.ButtonInfo.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ButtonInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.ButtonInfo.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ButtonInfo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ButtonInfo.Name = "ButtonInfo";
-            this.ButtonInfo.Size = new System.Drawing.Size(95, 22);
+            this.ButtonInfo.Size = new System.Drawing.Size(259, 22);
             this.ButtonInfo.Text = "О приложении";
             this.ButtonInfo.Click += new System.EventHandler(this.ButtonInfo_Click);
+            // 
+            // ButtonUpdateApp
+            // 
+            this.ButtonUpdateApp.Name = "ButtonUpdateApp";
+            this.ButtonUpdateApp.Size = new System.Drawing.Size(259, 22);
+            this.ButtonUpdateApp.Text = "Проверить наличие обновлений";
+            this.ButtonUpdateApp.Click += new System.EventHandler(this.ButtonUpdateApp_Click);
             // 
             // toolStripLabel1
             // 
@@ -390,11 +404,6 @@ namespace Travel_Company
             this.очиститьБазуДанныхToolStripMenuItem.Text = "Очистить базу данных";
             this.очиститьБазуДанныхToolStripMenuItem.Click += new System.EventHandler(this.очиститьБазуДанныхToolStripMenuItem_Click);
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -429,7 +438,7 @@ namespace Travel_Company
             // 
             this.buttonSearchTourist.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSearchTourist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchTourist.Location = new System.Drawing.Point(2, 252);
+            this.buttonSearchTourist.Location = new System.Drawing.Point(2, 557);
             this.buttonSearchTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonSearchTourist.Name = "buttonSearchTourist";
             this.buttonSearchTourist.Size = new System.Drawing.Size(161, 26);
@@ -442,7 +451,7 @@ namespace Travel_Company
             // 
             this.buttonClearStrTourist.BackColor = System.Drawing.SystemColors.Control;
             this.buttonClearStrTourist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStrTourist.Location = new System.Drawing.Point(289, 252);
+            this.buttonClearStrTourist.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClearStrTourist.Name = "buttonClearStrTourist";
             this.buttonClearStrTourist.Size = new System.Drawing.Size(161, 26);
@@ -450,36 +459,6 @@ namespace Travel_Company
             this.buttonClearStrTourist.Text = "Очистить поля для ввода";
             this.buttonClearStrTourist.UseVisualStyleBackColor = false;
             this.buttonClearStrTourist.Click += new System.EventHandler(this.buttonClearStr_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(744, 343);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(190, 15);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Работа с данными базы данных";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox7.Location = new System.Drawing.Point(15, 365);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox7.Size = new System.Drawing.Size(573, 284);
-            this.textBox7.TabIndex = 19;
             // 
             // toolStripStatusLabel1
             // 
@@ -498,8 +477,7 @@ namespace Travel_Company
             this.toolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 656);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.statusStrip1.Size = new System.Drawing.Size(1076, 21);
+            this.statusStrip1.Size = new System.Drawing.Size(1221, 21);
             this.statusStrip1.TabIndex = 14;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -516,29 +494,30 @@ namespace Travel_Company
             this.comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox.FormattingEnabled = true;
-            this.comboBox.Location = new System.Drawing.Point(103, 29);
+            this.comboBox.Location = new System.Drawing.Point(116, 30);
             this.comboBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBox.Name = "comboBox";
             this.comboBox.Size = new System.Drawing.Size(159, 22);
             this.comboBox.TabIndex = 22;
-            this.comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox_SelectedIndexChanged);
+            this.comboBox.SelectionChangeCommitted += new System.EventHandler(this.comboBox_SelectionChangeCommitted);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(12, 33);
+            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(16, 33);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 14);
+            this.label7.Size = new System.Drawing.Size(96, 15);
             this.label7.TabIndex = 23;
             this.label7.Text = "Выбор таблицы";
             // 
             // panelTourist
             // 
-            this.panelTourist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelTourist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTourist.AutoSize = true;
             this.panelTourist.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelTourist.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelTourist.Controls.Add(this.label46);
             this.panelTourist.Controls.Add(this.textBox45);
             this.panelTourist.Controls.Add(this.buttonDeletedTourist);
@@ -569,17 +548,17 @@ namespace Travel_Company
             this.panelTourist.Controls.Add(this.label4);
             this.panelTourist.Controls.Add(this.label5);
             this.panelTourist.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelTourist.Location = new System.Drawing.Point(604, 368);
+            this.panelTourist.Location = new System.Drawing.Point(754, 56);
             this.panelTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelTourist.Name = "panelTourist";
-            this.panelTourist.Size = new System.Drawing.Size(453, 281);
+            this.panelTourist.Size = new System.Drawing.Size(457, 590);
             this.panelTourist.TabIndex = 25;
             this.panelTourist.Visible = false;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(212, 79);
+            this.label46.Location = new System.Drawing.Point(91, 79);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(42, 14);
@@ -588,7 +567,7 @@ namespace Travel_Company
             // 
             // textBox45
             // 
-            this.textBox45.Location = new System.Drawing.Point(211, 95);
+            this.textBox45.Location = new System.Drawing.Point(88, 95);
             this.textBox45.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox45.Name = "textBox45";
             this.textBox45.Size = new System.Drawing.Size(70, 20);
@@ -598,7 +577,7 @@ namespace Travel_Company
             // 
             this.buttonDeletedTourist.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDeletedTourist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedTourist.Location = new System.Drawing.Point(170, 252);
+            this.buttonDeletedTourist.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonDeletedTourist.Name = "buttonDeletedTourist";
             this.buttonDeletedTourist.Size = new System.Drawing.Size(112, 26);
@@ -609,7 +588,7 @@ namespace Travel_Company
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(174, 56);
+            this.textBox23.Location = new System.Drawing.Point(2, 95);
             this.textBox23.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(80, 20);
@@ -618,7 +597,7 @@ namespace Travel_Company
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(174, 41);
+            this.label23.Location = new System.Drawing.Point(5, 79);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(76, 14);
@@ -628,7 +607,7 @@ namespace Travel_Company
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(5, 79);
+            this.label22.Location = new System.Drawing.Point(5, 122);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(144, 14);
@@ -637,26 +616,26 @@ namespace Travel_Company
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(2, 146);
+            this.textBox22.Location = new System.Drawing.Point(2, 224);
             this.textBox22.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox22.Multiline = true;
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(203, 47);
+            this.textBox22.Size = new System.Drawing.Size(263, 85);
             this.textBox22.TabIndex = 31;
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(2, 95);
+            this.textBox21.Location = new System.Drawing.Point(2, 140);
             this.textBox21.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(203, 50);
+            this.textBox21.Size = new System.Drawing.Size(263, 85);
             this.textBox21.TabIndex = 30;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(248, 157);
+            this.label21.Location = new System.Drawing.Point(416, 196);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(29, 14);
@@ -665,7 +644,7 @@ namespace Travel_Company
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(212, 173);
+            this.textBox20.Location = new System.Drawing.Point(383, 213);
             this.textBox20.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(66, 20);
@@ -753,9 +732,10 @@ namespace Travel_Company
             // 
             // panelExcursion
             // 
-            this.panelExcursion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelExcursion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelExcursion.AutoSize = true;
             this.panelExcursion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelExcursion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelExcursion.Controls.Add(this.buttonDeletedExcursion);
             this.panelExcursion.Controls.Add(this.label18);
             this.panelExcursion.Controls.Add(this.textBox17);
@@ -781,10 +761,10 @@ namespace Travel_Company
             this.panelExcursion.Controls.Add(this.label10);
             this.panelExcursion.Controls.Add(this.buttonSearchExcursion);
             this.panelExcursion.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelExcursion.Location = new System.Drawing.Point(604, 365);
+            this.panelExcursion.Location = new System.Drawing.Point(754, 56);
             this.panelExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelExcursion.Name = "panelExcursion";
-            this.panelExcursion.Size = new System.Drawing.Size(452, 284);
+            this.panelExcursion.Size = new System.Drawing.Size(456, 590);
             this.panelExcursion.TabIndex = 26;
             this.panelExcursion.Visible = false;
             // 
@@ -792,7 +772,7 @@ namespace Travel_Company
             // 
             this.buttonDeletedExcursion.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDeletedExcursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedExcursion.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedExcursion.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonDeletedExcursion.Name = "buttonDeletedExcursion";
             this.buttonDeletedExcursion.Size = new System.Drawing.Size(112, 26);
@@ -975,7 +955,7 @@ namespace Travel_Company
             // 
             this.buttonAddExcursion.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAddExcursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddExcursion.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddExcursion.Location = new System.Drawing.Point(4, 527);
             this.buttonAddExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonAddExcursion.Name = "buttonAddExcursion";
             this.buttonAddExcursion.Size = new System.Drawing.Size(161, 26);
@@ -988,7 +968,7 @@ namespace Travel_Company
             // 
             this.buttonClearStrExcursion.BackColor = System.Drawing.SystemColors.Control;
             this.buttonClearStrExcursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStrExcursion.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStrExcursion.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClearStrExcursion.Name = "buttonClearStrExcursion";
             this.buttonClearStrExcursion.Size = new System.Drawing.Size(161, 26);
@@ -1011,7 +991,7 @@ namespace Travel_Company
             // 
             this.buttonSearchExcursion.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSearchExcursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchExcursion.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchExcursion.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonSearchExcursion.Name = "buttonSearchExcursion";
             this.buttonSearchExcursion.Size = new System.Drawing.Size(161, 26);
@@ -1020,23 +1000,12 @@ namespace Travel_Company
             this.buttonSearchExcursion.UseVisualStyleBackColor = false;
             this.buttonSearchExcursion.Click += new System.EventHandler(this.buttonSearchExcursion_Click);
             // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.Location = new System.Drawing.Point(196, 343);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(160, 15);
-            this.label24.TabIndex = 26;
-            this.label24.Text = "Выполненный SQL-запрос";
-            // 
             // panelTravelAgency
             // 
-            this.panelTravelAgency.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelTravelAgency.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTravelAgency.AutoSize = true;
             this.panelTravelAgency.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelTravelAgency.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelTravelAgency.Controls.Add(this.buttonDeletedTravelAgency);
             this.panelTravelAgency.Controls.Add(this.label25);
             this.panelTravelAgency.Controls.Add(this.textBox24);
@@ -1060,17 +1029,17 @@ namespace Travel_Company
             this.panelTravelAgency.Controls.Add(this.label34);
             this.panelTravelAgency.Controls.Add(this.buttonSearchTravelAgency);
             this.panelTravelAgency.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelTravelAgency.Location = new System.Drawing.Point(604, 365);
+            this.panelTravelAgency.Location = new System.Drawing.Point(754, 56);
             this.panelTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelTravelAgency.Name = "panelTravelAgency";
-            this.panelTravelAgency.Size = new System.Drawing.Size(452, 284);
+            this.panelTravelAgency.Size = new System.Drawing.Size(456, 590);
             this.panelTravelAgency.TabIndex = 39;
             // 
             // buttonDeletedTravelAgency
             // 
             this.buttonDeletedTravelAgency.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDeletedTravelAgency.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedTravelAgency.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedTravelAgency.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonDeletedTravelAgency.Name = "buttonDeletedTravelAgency";
             this.buttonDeletedTravelAgency.Size = new System.Drawing.Size(112, 26);
@@ -1118,7 +1087,7 @@ namespace Travel_Company
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(220, 163);
+            this.label28.Location = new System.Drawing.Point(410, 241);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(35, 14);
@@ -1127,7 +1096,7 @@ namespace Travel_Company
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(167, 178);
+            this.textBox27.Location = new System.Drawing.Point(358, 258);
             this.textBox27.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(90, 20);
@@ -1136,7 +1105,7 @@ namespace Travel_Company
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(224, 124);
+            this.label29.Location = new System.Drawing.Point(416, 201);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(29, 14);
@@ -1145,7 +1114,7 @@ namespace Travel_Company
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(167, 139);
+            this.textBox28.Location = new System.Drawing.Point(358, 218);
             this.textBox28.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(90, 20);
@@ -1235,7 +1204,7 @@ namespace Travel_Company
             // 
             this.buttonAddTravelAgency.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAddTravelAgency.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddTravelAgency.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddTravelAgency.Location = new System.Drawing.Point(4, 527);
             this.buttonAddTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonAddTravelAgency.Name = "buttonAddTravelAgency";
             this.buttonAddTravelAgency.Size = new System.Drawing.Size(161, 26);
@@ -1248,7 +1217,7 @@ namespace Travel_Company
             // 
             this.buttonClearStrTravelAgency.BackColor = System.Drawing.SystemColors.Control;
             this.buttonClearStrTravelAgency.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStrTravelAgency.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStrTravelAgency.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClearStrTravelAgency.Name = "buttonClearStrTravelAgency";
             this.buttonClearStrTravelAgency.Size = new System.Drawing.Size(161, 26);
@@ -1271,7 +1240,7 @@ namespace Travel_Company
             // 
             this.buttonSearchTravelAgency.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSearchTravelAgency.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchTravelAgency.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchTravelAgency.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonSearchTravelAgency.Name = "buttonSearchTravelAgency";
             this.buttonSearchTravelAgency.Size = new System.Drawing.Size(161, 26);
@@ -1285,7 +1254,7 @@ namespace Travel_Company
             this.buttonReload.BackColor = System.Drawing.SystemColors.Control;
             this.buttonReload.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonReload.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonReload.Location = new System.Drawing.Point(266, 30);
+            this.buttonReload.Location = new System.Drawing.Point(279, 30);
             this.buttonReload.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonReload.Name = "buttonReload";
             this.buttonReload.Size = new System.Drawing.Size(72, 21);
@@ -1296,9 +1265,10 @@ namespace Travel_Company
             // 
             // panelTourOperator
             // 
-            this.panelTourOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelTourOperator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTourOperator.AutoSize = true;
             this.panelTourOperator.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelTourOperator.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelTourOperator.Controls.Add(this.label43);
             this.panelTourOperator.Controls.Add(this.textBox42);
             this.panelTourOperator.Controls.Add(this.buttonDeletedTourOperator);
@@ -1324,10 +1294,10 @@ namespace Travel_Company
             this.panelTourOperator.Controls.Add(this.label42);
             this.panelTourOperator.Controls.Add(this.buttonSearchTourOperator);
             this.panelTourOperator.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelTourOperator.Location = new System.Drawing.Point(604, 365);
+            this.panelTourOperator.Location = new System.Drawing.Point(754, 56);
             this.panelTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelTourOperator.Name = "panelTourOperator";
-            this.panelTourOperator.Size = new System.Drawing.Size(452, 284);
+            this.panelTourOperator.Size = new System.Drawing.Size(456, 590);
             this.panelTourOperator.TabIndex = 40;
             this.panelTourOperator.Visible = false;
             // 
@@ -1353,7 +1323,7 @@ namespace Travel_Company
             // 
             this.buttonDeletedTourOperator.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDeletedTourOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedTourOperator.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedTourOperator.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonDeletedTourOperator.Name = "buttonDeletedTourOperator";
             this.buttonDeletedTourOperator.Size = new System.Drawing.Size(112, 26);
@@ -1401,7 +1371,7 @@ namespace Travel_Company
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(220, 163);
+            this.label36.Location = new System.Drawing.Point(410, 241);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(35, 14);
@@ -1410,7 +1380,7 @@ namespace Travel_Company
             // 
             // textBox35
             // 
-            this.textBox35.Location = new System.Drawing.Point(167, 178);
+            this.textBox35.Location = new System.Drawing.Point(358, 258);
             this.textBox35.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox35.Name = "textBox35";
             this.textBox35.Size = new System.Drawing.Size(90, 20);
@@ -1419,7 +1389,7 @@ namespace Travel_Company
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(224, 124);
+            this.label37.Location = new System.Drawing.Point(416, 201);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(29, 14);
@@ -1428,7 +1398,7 @@ namespace Travel_Company
             // 
             // textBox36
             // 
-            this.textBox36.Location = new System.Drawing.Point(167, 139);
+            this.textBox36.Location = new System.Drawing.Point(358, 218);
             this.textBox36.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(90, 20);
@@ -1518,7 +1488,7 @@ namespace Travel_Company
             // 
             this.buttonAddlTourOperator.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAddlTourOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddlTourOperator.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddlTourOperator.Location = new System.Drawing.Point(4, 527);
             this.buttonAddlTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonAddlTourOperator.Name = "buttonAddlTourOperator";
             this.buttonAddlTourOperator.Size = new System.Drawing.Size(161, 26);
@@ -1531,7 +1501,7 @@ namespace Travel_Company
             // 
             this.buttonClearStrTourOperator.BackColor = System.Drawing.SystemColors.Control;
             this.buttonClearStrTourOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStrTourOperator.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStrTourOperator.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClearStrTourOperator.Name = "buttonClearStrTourOperator";
             this.buttonClearStrTourOperator.Size = new System.Drawing.Size(161, 26);
@@ -1554,7 +1524,7 @@ namespace Travel_Company
             // 
             this.buttonSearchTourOperator.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSearchTourOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchTourOperator.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchTourOperator.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonSearchTourOperator.Name = "buttonSearchTourOperator";
             this.buttonSearchTourOperator.Size = new System.Drawing.Size(161, 26);
@@ -1570,23 +1540,24 @@ namespace Travel_Company
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 56);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 56);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.Size = new System.Drawing.Size(1043, 281);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 600);
             this.dataGridView1.TabIndex = 42;
             // 
             // panelService
             // 
-            this.panelService.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelService.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelService.AutoSize = true;
             this.panelService.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelService.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelService.Controls.Add(this.label45);
             this.panelService.Controls.Add(this.textBox44);
             this.panelService.Controls.Add(this.label44);
@@ -1600,10 +1571,10 @@ namespace Travel_Company
             this.panelService.Controls.Add(this.label53);
             this.panelService.Controls.Add(this.buttonSearchService);
             this.panelService.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelService.Location = new System.Drawing.Point(604, 365);
+            this.panelService.Location = new System.Drawing.Point(754, 56);
             this.panelService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelService.Name = "panelService";
-            this.panelService.Size = new System.Drawing.Size(452, 284);
+            this.panelService.Size = new System.Drawing.Size(456, 590);
             this.panelService.TabIndex = 41;
             this.panelService.Visible = false;
             // 
@@ -1647,7 +1618,7 @@ namespace Travel_Company
             // 
             this.buttonDeletedService.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDeletedService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedService.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedService.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonDeletedService.Name = "buttonDeletedService";
             this.buttonDeletedService.Size = new System.Drawing.Size(112, 26);
@@ -1686,7 +1657,7 @@ namespace Travel_Company
             // 
             this.buttonAddService.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAddService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddService.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddService.Location = new System.Drawing.Point(4, 527);
             this.buttonAddService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonAddService.Name = "buttonAddService";
             this.buttonAddService.Size = new System.Drawing.Size(161, 26);
@@ -1699,7 +1670,7 @@ namespace Travel_Company
             // 
             this.buttonClearStrService.BackColor = System.Drawing.SystemColors.Control;
             this.buttonClearStrService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStrService.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStrService.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClearStrService.Name = "buttonClearStrService";
             this.buttonClearStrService.Size = new System.Drawing.Size(161, 26);
@@ -1722,7 +1693,7 @@ namespace Travel_Company
             // 
             this.buttonSearchService.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSearchService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchService.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchService.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonSearchService.Name = "buttonSearchService";
             this.buttonSearchService.Size = new System.Drawing.Size(161, 26);
@@ -1733,8 +1704,9 @@ namespace Travel_Company
             // 
             // panelProvides
             // 
-            this.panelProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelProvides.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelProvides.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelProvides.Controls.Add(this.label47);
             this.panelProvides.Controls.Add(this.textBox46);
             this.panelProvides.Controls.Add(this.buttonDeletedProvides);
@@ -1746,10 +1718,10 @@ namespace Travel_Company
             this.panelProvides.Controls.Add(this.label51);
             this.panelProvides.Controls.Add(this.buttonSearchProvides);
             this.panelProvides.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelProvides.Location = new System.Drawing.Point(604, 365);
+            this.panelProvides.Location = new System.Drawing.Point(754, 56);
             this.panelProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelProvides.Name = "panelProvides";
-            this.panelProvides.Size = new System.Drawing.Size(452, 284);
+            this.panelProvides.Size = new System.Drawing.Size(456, 590);
             this.panelProvides.TabIndex = 41;
             this.panelProvides.Visible = false;
             // 
@@ -1781,7 +1753,7 @@ namespace Travel_Company
             // 
             this.buttonDeletedProvides.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDeletedProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedProvides.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedProvides.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonDeletedProvides.Name = "buttonDeletedProvides";
             this.buttonDeletedProvides.Size = new System.Drawing.Size(112, 26);
@@ -1827,12 +1799,9 @@ namespace Travel_Company
             // 
             // buttonAddProvides
             // 
-            this.buttonAddProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAddProvides.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAddProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddProvides.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddProvides.Location = new System.Drawing.Point(4, 527);
             this.buttonAddProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonAddProvides.Name = "buttonAddProvides";
             this.buttonAddProvides.Size = new System.Drawing.Size(161, 26);
@@ -1843,12 +1812,9 @@ namespace Travel_Company
             // 
             // buttonClearStrProvides
             // 
-            this.buttonClearStrProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonClearStrProvides.BackColor = System.Drawing.SystemColors.Control;
             this.buttonClearStrProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStrProvides.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStrProvides.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClearStrProvides.Name = "buttonClearStrProvides";
             this.buttonClearStrProvides.Size = new System.Drawing.Size(161, 26);
@@ -1872,12 +1838,9 @@ namespace Travel_Company
             // 
             // buttonSearchProvides
             // 
-            this.buttonSearchProvides.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSearchProvides.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSearchProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchProvides.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchProvides.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonSearchProvides.Name = "buttonSearchProvides";
             this.buttonSearchProvides.Size = new System.Drawing.Size(161, 26);
@@ -1886,20 +1849,11 @@ namespace Travel_Company
             this.buttonSearchProvides.UseVisualStyleBackColor = false;
             this.buttonSearchProvides.Click += new System.EventHandler(this.buttonSearchProvides_Click);
             // 
-            // panel1
-            // 
-            this.panel1.AutoSize = true;
-            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Location = new System.Drawing.Point(604, 649);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(0, 0);
-            this.panel1.TabIndex = 44;
-            // 
             // panelPromotes
             // 
-            this.panelPromotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelPromotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelPromotes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelPromotes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelPromotes.Controls.Add(this.label48);
             this.panelPromotes.Controls.Add(this.textBox47);
             this.panelPromotes.Controls.Add(this.buttonDeletedPromotes);
@@ -1911,10 +1865,10 @@ namespace Travel_Company
             this.panelPromotes.Controls.Add(this.label54);
             this.panelPromotes.Controls.Add(this.buttonSearchPromotes);
             this.panelPromotes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelPromotes.Location = new System.Drawing.Point(604, 362);
+            this.panelPromotes.Location = new System.Drawing.Point(754, 56);
             this.panelPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelPromotes.Name = "panelPromotes";
-            this.panelPromotes.Size = new System.Drawing.Size(452, 284);
+            this.panelPromotes.Size = new System.Drawing.Size(456, 590);
             this.panelPromotes.TabIndex = 43;
             this.panelPromotes.Visible = false;
             // 
@@ -1946,7 +1900,7 @@ namespace Travel_Company
             // 
             this.buttonDeletedPromotes.BackColor = System.Drawing.SystemColors.Control;
             this.buttonDeletedPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDeletedPromotes.Location = new System.Drawing.Point(170, 255);
+            this.buttonDeletedPromotes.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonDeletedPromotes.Name = "buttonDeletedPromotes";
             this.buttonDeletedPromotes.Size = new System.Drawing.Size(112, 26);
@@ -1992,12 +1946,9 @@ namespace Travel_Company
             // 
             // buttonAddPromotes
             // 
-            this.buttonAddPromotes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAddPromotes.BackColor = System.Drawing.SystemColors.Control;
             this.buttonAddPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAddPromotes.Location = new System.Drawing.Point(4, 225);
+            this.buttonAddPromotes.Location = new System.Drawing.Point(4, 527);
             this.buttonAddPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonAddPromotes.Name = "buttonAddPromotes";
             this.buttonAddPromotes.Size = new System.Drawing.Size(161, 26);
@@ -2008,12 +1959,9 @@ namespace Travel_Company
             // 
             // buttonClearStr
             // 
-            this.buttonClearStr.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonClearStr.BackColor = System.Drawing.SystemColors.Control;
             this.buttonClearStr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearStr.Location = new System.Drawing.Point(289, 255);
+            this.buttonClearStr.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStr.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonClearStr.Name = "buttonClearStr";
             this.buttonClearStr.Size = new System.Drawing.Size(161, 26);
@@ -2037,12 +1985,9 @@ namespace Travel_Company
             // 
             // buttonSearchPromotes
             // 
-            this.buttonSearchPromotes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSearchPromotes.BackColor = System.Drawing.SystemColors.Control;
             this.buttonSearchPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSearchPromotes.Location = new System.Drawing.Point(4, 255);
+            this.buttonSearchPromotes.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonSearchPromotes.Name = "buttonSearchPromotes";
             this.buttonSearchPromotes.Size = new System.Drawing.Size(161, 26);
@@ -2051,29 +1996,39 @@ namespace Travel_Company
             this.buttonSearchPromotes.UseVisualStyleBackColor = false;
             this.buttonSearchPromotes.Click += new System.EventHandler(this.buttonSearchPromotes_Click);
             // 
+            // panelDefault
+            // 
+            this.panelDefault.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDefault.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelDefault.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelDefault.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelDefault.Location = new System.Drawing.Point(754, 56);
+            this.panelDefault.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panelDefault.Name = "panelDefault";
+            this.panelDefault.Size = new System.Drawing.Size(456, 590);
+            this.panelDefault.TabIndex = 44;
+            this.panelDefault.Visible = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(1076, 677);
-            this.Controls.Add(this.panelPromotes);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(1221, 677);
+            this.Controls.Add(this.buttonReload);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboBox);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelProvides);
             this.Controls.Add(this.panelService);
             this.Controls.Add(this.panelTourOperator);
-            this.Controls.Add(this.buttonReload);
             this.Controls.Add(this.panelExcursion);
             this.Controls.Add(this.panelTravelAgency);
-            this.Controls.Add(this.label24);
             this.Controls.Add(this.panelTourist);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panelPromotes);
+            this.Controls.Add(this.panelDefault);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MinimumSize = new System.Drawing.Size(1092, 716);
@@ -2116,18 +2071,13 @@ namespace Travel_Company
         public System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton ButtonInfo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonSearchTourist;
         private System.Windows.Forms.Button buttonClearStrTourist;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton ButtonReconnectionBD;
         private System.Windows.Forms.ToolStripSeparator toolStripLabel1;
-        private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
@@ -2179,8 +2129,6 @@ namespace Travel_Company
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ToolStripMenuItem создатьРезервнуюКопиюToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem восстановитьБазуДанныхToolStripMenuItem;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button buttonDeletedExcursion;
         private System.Windows.Forms.Button buttonDeletedTourist;
         private System.Windows.Forms.Panel panelTravelAgency;
@@ -2265,7 +2213,6 @@ namespace Travel_Company
         private System.Windows.Forms.ToolStripMenuItem войтиКакАдминистраторToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem войтиКакГостьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выйтиToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelPromotes;
         private System.Windows.Forms.Label label48;
         public System.Windows.Forms.TextBox textBox47;
@@ -2277,5 +2224,9 @@ namespace Travel_Company
         private System.Windows.Forms.Button buttonClearStr;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Button buttonSearchPromotes;
+        private System.Windows.Forms.Panel panelDefault;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
+        private System.Windows.Forms.ToolStripMenuItem ButtonInfo;
+        private System.Windows.Forms.ToolStripMenuItem ButtonUpdateApp;
     }
 }

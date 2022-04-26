@@ -9,7 +9,7 @@ namespace Travel_Company
 {
     public partial class FormMain : Form
     {
-        public string ver = "Ver. Alpha 0.7.0 T_C";
+        public string ver = "Ver. Alpha 0.8.0 T_C";
 
         public static SqlConnection connection = new SqlConnection(Properties.Settings.Default.connString);
         readonly Interaction.InteractionData interactionData = new Interaction.InteractionData();
@@ -33,13 +33,14 @@ namespace Travel_Company
             openFileDialogSQL.Filter = "Sql files(*.sql)|*.sql| Text files(*.txt)|*.txt| All files(*.*)|*.*";
             openFileDialogRes.Filter = "Bak files(*bak)|*bak";
             UpdateApp();
+            DataTable();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
             PanelLoad();
+            Visibl();
             if (Test() != true) return;
-            DataTable();
             Reload(comboBox.Text);
             toolStripStatusLabel2.Text = "Готово к работе";
         }
@@ -77,67 +78,18 @@ namespace Travel_Company
             }
         }
 
-        private void comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
             if (Test() != true) return;
-            if (LoginGuest() == false) return;
-            string sql = "SELECT * FROM " + comboBox.Text;
-            using (SqlCommand sqlCommand = new SqlCommand(sql, connection))
+            if (LoginGuest() != true) return;
+            try
             {
-                try
-                {
-                    connection.Open();
-                    using (SqlDataReader dataReader = sqlCommand.ExecuteReader())
-                    {
-                        DataTable dataTable = new DataTable();
-                        dataTable.Load(dataReader);
-                        dataGridView1.DataSource = dataTable;
-                        dataReader.Close();
-                    }
-                    switch (comboBox.Text)
-                    {
-                        case "Tourist":
-                            Visibl();
-                            panelTourist.Visible = true;
-                            break;
-                        case "TourOperator":
-                            Visibl();
-                            panelTourOperator.Visible = true;
-                            break;
-                        case "TravelAgency":
-                            Visibl();
-                            panelTravelAgency.Visible = true;
-                            break;
-                        case "Excursion":
-                            Visibl();
-                            panelExcursion.Visible = true;
-                            break;
-                        case "Provides":
-                            Visibl();
-                            panelProvides.Visible = true;
-                            break;
-                        case "Service":
-                            Visibl();
-                            panelService.Visible = true;
-                            break;
-                        case "Promotes":
-                            Visibl();
-                            panelPromotes.Visible = true;
-                            break;
-                        default:
-                            Visibl();
-                            break;
-                    }
-                    toolStripStatusLabel2.Text = "Выбрана таблица " + comboBox.Text;
-                }
-                catch (Exception ex)
-                {
-                    toolStripStatusLabel2.Text = $"Ошибка! {ex.Message}";
-                }
-                finally
-                {
-                    connection.Close();
-                }
+                Reload(comboBox.Text);
+                Visibl();
+            }
+            catch (Exception ex)
+            {
+                toolStripStatusLabel2.Text = $"Ошибка! {ex.Message}";
             }
         }
 
@@ -145,12 +97,40 @@ namespace Travel_Company
         {
             foreach (var ctrl in this.Controls)
                 if (ctrl is Panel) (ctrl as Panel).Visible = false;
+            panelDefault.Visible = true;
+            switch (comboBox.Text)
+            {
+                case "Tourist":
+                    panelTourist.Visible = true;
+                    break;
+                case "TourOperator":
+                    panelTourOperator.Visible = true;
+                    break;
+                case "TravelAgency":
+                    panelTravelAgency.Visible = true;
+                    break;
+                case "Excursion":
+                    panelExcursion.Visible = true;
+                    break;
+                case "Provides":
+                    panelProvides.Visible = true;
+                    break;
+                case "Service":
+                    panelService.Visible = true;
+                    break;
+                case "Promotes":
+                    panelPromotes.Visible = true;
+                    break;
+                default:
+                    break;
+            }
+            toolStripStatusLabel2.Text = "Выбрана таблица " + comboBox.Text;
         }
 
         private void buttonReload_Click(object sender, EventArgs e)
         {
             if (Test() != true) return;
-            if (LoginGuest() == false) return;
+            if (LoginGuest() != true) return;
             Reload(comboBox.Text);
         }
 
@@ -213,10 +193,11 @@ namespace Travel_Company
         private void buttonReconnection_Click(object sender, EventArgs e)
         {
             PanelLoad();
-            if (SQLStat == true)
+            if (SQLStat != false)
             {
                 MessageBox.Show("Подключение к базе данных установленно", "Проверка подключения", MessageBoxButtons.OK);
                 DataTable();
+                Visibl();
                 Reload(comboBox.Text);
                 toolStripStatusLabel2.Text = "Готово к работе";
             }
@@ -230,7 +211,7 @@ namespace Travel_Company
         private void buttonDeleted_Click(object sender, EventArgs e)
         {
             if (Test() != true) return;
-            if (LoginAdmin() == false) return;
+            if (LoginAdmin() != true) return;
             FormDeleted formDeleted = new FormDeleted();
             formDeleted.ShowDialog();
         }
@@ -240,6 +221,8 @@ namespace Travel_Company
             FormInfo formInfo = new FormInfo();
             formInfo.ShowDialog();
         }
+
+        private void ButtonUpdateApp_Click(object sender, EventArgs e) => UpdateApp();
 
         private void выполнитьЗапросToolStripMenuItem_Click(object sender, EventArgs e) => interactionTool.выполнитьЗапросToolStripMenuItem();
 
@@ -271,14 +254,14 @@ namespace Travel_Company
 
         private void выйтиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (FormLogin.Login == null)
+            if (FormLogin.Login != null)
             {
-                MessageBox.Show("Не выполнен вход в систему!", "Ошибка входа", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                FormLogin.Login = null;
+                toolStripStatusLabel2.Text = "Произведен выход из системы";
+                this.Text = "Туристическая компания";
                 return;
             }
-            FormLogin.Login = null;
-            toolStripStatusLabel2.Text = "Произведен выход из системы";
-            this.Text = "Туристическая компания";
+            MessageBox.Show("Не выполнен вход в систему!", "Ошибка входа", MessageBoxButtons.OK, MessageBoxIcon.Error);   
         }
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -296,24 +279,24 @@ namespace Travel_Company
 
         public bool LoginGuest()
         {
-            if (FormLogin.Login == null)
+            if (FormLogin.Login != null)
             {
-                MessageBox.Show("Вы не вошли в систему!\r\nВойдите в систему во вкладке Пользователи.", "Ошибка входа", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                if (FormLogin.Login == "guest") return true;
+                return true;
             }
-            if (FormLogin.Login == "guest") return true;
-            return true;
+            MessageBox.Show("Вы не вошли в систему!\r\nВойдите в систему во вкладке Пользователи.", "Ошибка входа", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
         }
 
         public bool LoginAdmin()
         {
-            if (FormLogin.Login == null)
+            if (FormLogin.Login != null)
             {
-                MessageBox.Show("Вы не вошли в систему!\r\nВойдите в систему во вкладке Пользователи.", "Ошибка входа", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (FormLogin.Login == "admin") return true;
+                MessageBox.Show("Вы не являетесь Администратором!", "Ошибка доступа", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            if (FormLogin.Login == "admin") return true;
-            MessageBox.Show("Вы не являетесь Администратором!", "Ошибка доступа", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show("Вы не вошли в систему!\r\nВойдите в систему во вкладке Пользователи.", "Ошибка входа", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return false;
         }
 
@@ -353,6 +336,7 @@ namespace Travel_Company
                 Uri uri = new Uri("https://github.com/GICK00/Travel_Company/blob/main/Ver.txt");
                 if (client.DownloadString(uri).Contains(ver))
                 {
+                    toolStripStatusLabel2.Text = "Устновленна послденяя версия приложения " + ver;
                     return;
                 }
                 else
@@ -361,8 +345,8 @@ namespace Travel_Company
                     DialogResult result = MessageBox.Show(text, "Достуно новое обновление", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (result == DialogResult.Yes)
                     {
-                        Program.formMain.Close();
                         System.Diagnostics.Process.Start("https://github.com/GICK00/Travel_Company");
+                        Environment.Exit(0);
                     }
                 }
             }
