@@ -42,7 +42,7 @@ namespace Travel_Company
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel1.Location = new System.Drawing.Point(254, 156);
+            this.linkLabel1.Location = new System.Drawing.Point(242, 142);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(114, 16);
             this.linkLabel1.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace Travel_Company
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel2.Location = new System.Drawing.Point(453, 156);
+            this.linkLabel2.Location = new System.Drawing.Point(441, 142);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(159, 16);
             this.linkLabel2.TabIndex = 2;
@@ -68,7 +68,7 @@ namespace Travel_Company
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel3.Location = new System.Drawing.Point(142, 204);
+            this.linkLabel3.Location = new System.Drawing.Point(130, 190);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(267, 16);
             this.linkLabel3.TabIndex = 3;
@@ -88,10 +88,10 @@ namespace Travel_Company
             this.richTextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(-1, -2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(603, 259);
+            this.richTextBox1.Size = new System.Drawing.Size(628, 251);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -100,7 +100,7 @@ namespace Travel_Company
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(624, 314);
+            this.ClientSize = new System.Drawing.Size(624, 290);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);

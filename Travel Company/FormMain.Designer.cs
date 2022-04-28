@@ -193,6 +193,19 @@ namespace Travel_Company
             this.label54 = new System.Windows.Forms.Label();
             this.buttonSearchPromotes = new System.Windows.Forms.Button();
             this.panelDefault = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panelTourist.SuspendLayout();
@@ -203,11 +216,12 @@ namespace Travel_Company
             this.panelService.SuspendLayout();
             this.panelProvides.SuspendLayout();
             this.panelPromotes.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonAddTourist
             // 
-            this.buttonAddTourist.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddTourist.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAddTourist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAddTourist.Location = new System.Drawing.Point(2, 527);
             this.buttonAddTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -220,35 +234,35 @@ namespace Travel_Company
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(2, 18);
+            this.textBox1.Location = new System.Drawing.Point(2, 21);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 20);
+            this.textBox1.Size = new System.Drawing.Size(212, 21);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(221, 18);
+            this.textBox2.Location = new System.Drawing.Point(218, 21);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(44, 20);
+            this.textBox2.Size = new System.Drawing.Size(44, 21);
             this.textBox2.TabIndex = 2;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(286, 18);
+            this.textBox4.Location = new System.Drawing.Point(285, 21);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(165, 20);
+            this.textBox4.Size = new System.Drawing.Size(165, 21);
             this.textBox4.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 3);
+            this.label1.Location = new System.Drawing.Point(5, 3);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 14);
+            this.label1.Size = new System.Drawing.Size(34, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "ФИО";
             // 
@@ -410,33 +424,33 @@ namespace Travel_Company
             this.label2.Location = new System.Drawing.Point(221, 3);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 14);
+            this.label2.Size = new System.Drawing.Size(30, 15);
             this.label2.TabIndex = 9;
             this.label2.Text = "Пол";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(404, 40);
+            this.label4.Location = new System.Drawing.Point(404, 45);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 14);
+            this.label4.Size = new System.Drawing.Size(46, 15);
             this.label4.TabIndex = 11;
             this.label4.Text = "Регион";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(404, 3);
+            this.label5.Location = new System.Drawing.Point(401, 3);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 14);
+            this.label5.Size = new System.Drawing.Size(49, 15);
             this.label5.TabIndex = 12;
             this.label5.Text = "Страна";
             // 
             // buttonSearchTourist
             // 
-            this.buttonSearchTourist.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchTourist.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSearchTourist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearchTourist.Location = new System.Drawing.Point(2, 557);
             this.buttonSearchTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -449,7 +463,7 @@ namespace Travel_Company
             // 
             // buttonClearStrTourist
             // 
-            this.buttonClearStrTourist.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStrTourist.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClearStrTourist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClearStrTourist.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -475,7 +489,7 @@ namespace Travel_Company
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 656);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 793);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1221, 21);
             this.statusStrip1.TabIndex = 14;
@@ -489,26 +503,29 @@ namespace Travel_Company
             // 
             // comboBox
             // 
+            this.comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox.FormattingEnabled = true;
-            this.comboBox.Location = new System.Drawing.Point(116, 30);
+            this.comboBox.Location = new System.Drawing.Point(875, 30);
             this.comboBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(159, 22);
+            this.comboBox.Size = new System.Drawing.Size(159, 23);
             this.comboBox.TabIndex = 22;
             this.comboBox.SelectionChangeCommitted += new System.EventHandler(this.comboBox_SelectionChangeCommitted);
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(16, 33);
+            this.label7.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(757, 33);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 15);
+            this.label7.Size = new System.Drawing.Size(116, 17);
             this.label7.TabIndex = 23;
             this.label7.Text = "Выбор таблицы";
             // 
@@ -547,35 +564,35 @@ namespace Travel_Company
             this.panelTourist.Controls.Add(this.label2);
             this.panelTourist.Controls.Add(this.label4);
             this.panelTourist.Controls.Add(this.label5);
-            this.panelTourist.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelTourist.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelTourist.Location = new System.Drawing.Point(754, 56);
             this.panelTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelTourist.Name = "panelTourist";
-            this.panelTourist.Size = new System.Drawing.Size(457, 590);
+            this.panelTourist.Size = new System.Drawing.Size(456, 590);
             this.panelTourist.TabIndex = 25;
             this.panelTourist.Visible = false;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(91, 79);
+            this.label46.Location = new System.Drawing.Point(97, 84);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(42, 14);
+            this.label46.Size = new System.Drawing.Size(49, 15);
             this.label46.TabIndex = 41;
             this.label46.Text = "Скидка";
             // 
             // textBox45
             // 
-            this.textBox45.Location = new System.Drawing.Point(88, 95);
+            this.textBox45.Location = new System.Drawing.Point(97, 102);
             this.textBox45.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(70, 20);
+            this.textBox45.Size = new System.Drawing.Size(82, 21);
             this.textBox45.TabIndex = 40;
             // 
             // buttonDeletedTourist
             // 
-            this.buttonDeletedTourist.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedTourist.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonDeletedTourist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletedTourist.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedTourist.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -588,35 +605,35 @@ namespace Travel_Company
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(2, 95);
+            this.textBox23.Location = new System.Drawing.Point(2, 102);
             this.textBox23.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(80, 20);
+            this.textBox23.Size = new System.Drawing.Size(91, 21);
             this.textBox23.TabIndex = 34;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(5, 79);
+            this.label23.Location = new System.Drawing.Point(5, 84);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(76, 14);
+            this.label23.Size = new System.Drawing.Size(88, 15);
             this.label23.TabIndex = 33;
             this.label23.Text = "Номер заказа";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(5, 122);
+            this.label22.Location = new System.Drawing.Point(5, 129);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(144, 14);
+            this.label22.Size = new System.Drawing.Size(162, 15);
             this.label22.TabIndex = 32;
             this.label22.Text = "Паспортные данные \\ Виза";
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(2, 224);
+            this.textBox22.Location = new System.Drawing.Point(2, 231);
             this.textBox22.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox22.Multiline = true;
             this.textBox22.Name = "textBox22";
@@ -625,7 +642,7 @@ namespace Travel_Company
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(2, 140);
+            this.textBox21.Location = new System.Drawing.Point(2, 147);
             this.textBox21.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
@@ -635,99 +652,99 @@ namespace Travel_Company
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(416, 196);
+            this.label21.Location = new System.Drawing.Point(419, 213);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(29, 14);
+            this.label21.Size = new System.Drawing.Size(31, 15);
             this.label21.TabIndex = 29;
             this.label21.Text = "Дом";
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(383, 213);
+            this.textBox20.Location = new System.Drawing.Point(384, 231);
             this.textBox20.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(66, 20);
+            this.textBox20.Size = new System.Drawing.Size(66, 21);
             this.textBox20.TabIndex = 28;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(410, 157);
+            this.label20.Location = new System.Drawing.Point(408, 171);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(37, 14);
+            this.label20.Size = new System.Drawing.Size(42, 15);
             this.label20.TabIndex = 27;
             this.label20.Text = "Улица";
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(284, 173);
+            this.textBox19.Location = new System.Drawing.Point(285, 189);
             this.textBox19.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(165, 20);
+            this.textBox19.Size = new System.Drawing.Size(165, 21);
             this.textBox19.TabIndex = 26;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(5, 40);
+            this.label19.Location = new System.Drawing.Point(5, 45);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(50, 14);
+            this.label19.Size = new System.Drawing.Size(57, 15);
             this.label19.TabIndex = 25;
             this.label19.Text = "Телефон";
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(2, 56);
+            this.textBox18.Location = new System.Drawing.Point(2, 60);
             this.textBox18.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(165, 20);
+            this.textBox18.Size = new System.Drawing.Size(165, 21);
             this.textBox18.TabIndex = 24;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(410, 118);
+            this.label6.Location = new System.Drawing.Point(409, 129);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 14);
+            this.label6.Size = new System.Drawing.Size(41, 15);
             this.label6.TabIndex = 23;
             this.label6.Text = "Город";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(286, 134);
+            this.textBox6.Location = new System.Drawing.Point(285, 147);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(165, 20);
+            this.textBox6.Size = new System.Drawing.Size(165, 21);
             this.textBox6.TabIndex = 22;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(286, 95);
+            this.textBox5.Location = new System.Drawing.Point(285, 105);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(165, 20);
+            this.textBox5.Size = new System.Drawing.Size(165, 21);
             this.textBox5.TabIndex = 21;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(404, 79);
+            this.label3.Location = new System.Drawing.Point(401, 87);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 14);
+            this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 20;
             this.label3.Text = "Индекс";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(286, 56);
+            this.textBox3.Location = new System.Drawing.Point(285, 63);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(165, 20);
+            this.textBox3.Size = new System.Drawing.Size(165, 21);
             this.textBox3.TabIndex = 19;
             // 
             // panelExcursion
@@ -760,7 +777,7 @@ namespace Travel_Company
             this.panelExcursion.Controls.Add(this.buttonClearStrExcursion);
             this.panelExcursion.Controls.Add(this.label10);
             this.panelExcursion.Controls.Add(this.buttonSearchExcursion);
-            this.panelExcursion.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelExcursion.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelExcursion.Location = new System.Drawing.Point(754, 56);
             this.panelExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelExcursion.Name = "panelExcursion";
@@ -770,7 +787,7 @@ namespace Travel_Company
             // 
             // buttonDeletedExcursion
             // 
-            this.buttonDeletedExcursion.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedExcursion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonDeletedExcursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletedExcursion.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -784,176 +801,176 @@ namespace Travel_Company
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(415, 161);
+            this.label18.Location = new System.Drawing.Point(413, 172);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(32, 14);
+            this.label18.Size = new System.Drawing.Size(37, 15);
             this.label18.TabIndex = 37;
             this.label18.Text = "Цена";
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(326, 178);
+            this.textBox17.Location = new System.Drawing.Point(330, 190);
             this.textBox17.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(120, 20);
+            this.textBox17.Size = new System.Drawing.Size(120, 21);
             this.textBox17.TabIndex = 36;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(330, 121);
+            this.label17.Location = new System.Drawing.Point(316, 128);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(117, 14);
+            this.label17.Size = new System.Drawing.Size(134, 15);
             this.label17.TabIndex = 35;
             this.label17.Text = "Способ перемещения";
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(326, 139);
+            this.textBox16.Location = new System.Drawing.Point(330, 146);
             this.textBox16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(120, 20);
+            this.textBox16.Size = new System.Drawing.Size(120, 21);
             this.textBox16.TabIndex = 34;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(2, 162);
+            this.label16.Location = new System.Drawing.Point(7, 172);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(84, 14);
+            this.label16.Size = new System.Drawing.Size(91, 15);
             this.label16.TabIndex = 33;
             this.label16.Text = "Кол. во персон";
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(2, 178);
+            this.textBox15.Location = new System.Drawing.Point(4, 190);
             this.textBox15.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(83, 20);
+            this.textBox15.Size = new System.Drawing.Size(83, 21);
             this.textBox15.TabIndex = 32;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(2, 123);
+            this.label15.Location = new System.Drawing.Point(7, 130);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 14);
+            this.label15.Size = new System.Drawing.Size(49, 15);
             this.label15.TabIndex = 31;
             this.label15.Text = "Сервис";
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(2, 139);
+            this.textBox14.Location = new System.Drawing.Point(4, 148);
             this.textBox14.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(137, 20);
+            this.textBox14.Size = new System.Drawing.Size(137, 21);
             this.textBox14.TabIndex = 30;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(2, 82);
+            this.label14.Location = new System.Drawing.Point(7, 87);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 14);
+            this.label14.Size = new System.Drawing.Size(125, 15);
             this.label14.TabIndex = 29;
             this.label14.Text = "Продолжительность";
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(2, 98);
+            this.textBox13.Location = new System.Drawing.Point(4, 105);
             this.textBox13.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(137, 20);
+            this.textBox13.Size = new System.Drawing.Size(137, 21);
             this.textBox13.TabIndex = 28;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(2, 42);
+            this.label13.Location = new System.Drawing.Point(7, 45);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 14);
+            this.label13.Size = new System.Drawing.Size(34, 15);
             this.label13.TabIndex = 27;
             this.label13.Text = "Дата";
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(2, 59);
+            this.textBox12.Location = new System.Drawing.Point(4, 63);
             this.textBox12.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(137, 20);
+            this.textBox12.Size = new System.Drawing.Size(137, 21);
             this.textBox12.TabIndex = 26;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(410, 82);
+            this.label12.Location = new System.Drawing.Point(409, 87);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 14);
+            this.label12.Size = new System.Drawing.Size(41, 15);
             this.label12.TabIndex = 25;
             this.label12.Text = "Город";
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(270, 98);
+            this.textBox11.Location = new System.Drawing.Point(272, 104);
             this.textBox11.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(178, 20);
+            this.textBox11.Size = new System.Drawing.Size(178, 21);
             this.textBox11.TabIndex = 24;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(404, 42);
+            this.label11.Location = new System.Drawing.Point(404, 45);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 14);
+            this.label11.Size = new System.Drawing.Size(46, 15);
             this.label11.TabIndex = 23;
             this.label11.Text = "Регион";
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(270, 59);
+            this.textBox10.Location = new System.Drawing.Point(272, 63);
             this.textBox10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(178, 20);
+            this.textBox10.Size = new System.Drawing.Size(178, 21);
             this.textBox10.TabIndex = 22;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(406, 3);
+            this.label9.Location = new System.Drawing.Point(401, 3);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 14);
+            this.label9.Size = new System.Drawing.Size(49, 15);
             this.label9.TabIndex = 21;
             this.label9.Text = "Страна";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(270, 19);
+            this.textBox9.Location = new System.Drawing.Point(272, 21);
             this.textBox9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(178, 20);
+            this.textBox9.Size = new System.Drawing.Size(178, 21);
             this.textBox9.TabIndex = 20;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(2, 19);
+            this.textBox8.Location = new System.Drawing.Point(4, 21);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(137, 20);
+            this.textBox8.Size = new System.Drawing.Size(137, 21);
             this.textBox8.TabIndex = 19;
             // 
             // buttonAddExcursion
             // 
-            this.buttonAddExcursion.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddExcursion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAddExcursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAddExcursion.Location = new System.Drawing.Point(4, 527);
             this.buttonAddExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -966,7 +983,7 @@ namespace Travel_Company
             // 
             // buttonClearStrExcursion
             // 
-            this.buttonClearStrExcursion.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStrExcursion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClearStrExcursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClearStrExcursion.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -980,16 +997,16 @@ namespace Travel_Company
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(2, 3);
+            this.label10.Location = new System.Drawing.Point(7, 3);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 14);
+            this.label10.Size = new System.Drawing.Size(122, 15);
             this.label10.TabIndex = 7;
             this.label10.Text = "Название экскурсии";
             // 
             // buttonSearchExcursion
             // 
-            this.buttonSearchExcursion.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchExcursion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSearchExcursion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearchExcursion.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchExcursion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1028,7 +1045,7 @@ namespace Travel_Company
             this.panelTravelAgency.Controls.Add(this.buttonClearStrTravelAgency);
             this.panelTravelAgency.Controls.Add(this.label34);
             this.panelTravelAgency.Controls.Add(this.buttonSearchTravelAgency);
-            this.panelTravelAgency.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelTravelAgency.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelTravelAgency.Location = new System.Drawing.Point(754, 56);
             this.panelTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelTravelAgency.Name = "panelTravelAgency";
@@ -1037,7 +1054,7 @@ namespace Travel_Company
             // 
             // buttonDeletedTravelAgency
             // 
-            this.buttonDeletedTravelAgency.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedTravelAgency.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonDeletedTravelAgency.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletedTravelAgency.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1051,158 +1068,158 @@ namespace Travel_Company
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(408, 163);
+            this.label25.Location = new System.Drawing.Point(408, 170);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(37, 14);
+            this.label25.Size = new System.Drawing.Size(42, 15);
             this.label25.TabIndex = 37;
             this.label25.Text = "Улица";
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(270, 178);
+            this.textBox24.Location = new System.Drawing.Point(272, 188);
             this.textBox24.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(178, 20);
+            this.textBox24.Size = new System.Drawing.Size(178, 21);
             this.textBox24.TabIndex = 36;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(402, 82);
+            this.label26.Location = new System.Drawing.Point(401, 86);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(45, 14);
+            this.label26.Size = new System.Drawing.Size(49, 15);
             this.label26.TabIndex = 35;
             this.label26.Text = "Индекс";
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(270, 139);
+            this.textBox25.Location = new System.Drawing.Point(272, 146);
             this.textBox25.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(178, 20);
+            this.textBox25.Size = new System.Drawing.Size(178, 21);
             this.textBox25.TabIndex = 34;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(410, 241);
+            this.label28.Location = new System.Drawing.Point(412, 254);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(35, 14);
+            this.label28.Size = new System.Drawing.Size(38, 15);
             this.label28.TabIndex = 31;
             this.label28.Text = "Офис";
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(358, 258);
+            this.textBox27.Location = new System.Drawing.Point(360, 272);
             this.textBox27.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(90, 20);
+            this.textBox27.Size = new System.Drawing.Size(90, 21);
             this.textBox27.TabIndex = 30;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(416, 201);
+            this.label29.Location = new System.Drawing.Point(419, 212);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(29, 14);
+            this.label29.Size = new System.Drawing.Size(31, 15);
             this.label29.TabIndex = 29;
             this.label29.Text = "Дом";
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(358, 218);
+            this.textBox28.Location = new System.Drawing.Point(360, 230);
             this.textBox28.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(90, 20);
+            this.textBox28.Size = new System.Drawing.Size(90, 21);
             this.textBox28.TabIndex = 28;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(4, 43);
+            this.label30.Location = new System.Drawing.Point(7, 44);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(50, 14);
+            this.label30.Size = new System.Drawing.Size(57, 15);
             this.label30.TabIndex = 27;
             this.label30.Text = "Телефон";
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(2, 59);
+            this.textBox29.Location = new System.Drawing.Point(4, 62);
             this.textBox29.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(137, 20);
+            this.textBox29.Size = new System.Drawing.Size(137, 21);
             this.textBox29.TabIndex = 26;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(410, 123);
+            this.label31.Location = new System.Drawing.Point(409, 128);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(36, 14);
+            this.label31.Size = new System.Drawing.Size(41, 15);
             this.label31.TabIndex = 25;
             this.label31.Text = "Город";
             // 
             // textBox30
             // 
-            this.textBox30.Location = new System.Drawing.Point(270, 98);
+            this.textBox30.Location = new System.Drawing.Point(272, 104);
             this.textBox30.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(178, 20);
+            this.textBox30.Size = new System.Drawing.Size(178, 21);
             this.textBox30.TabIndex = 24;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(404, 42);
+            this.label32.Location = new System.Drawing.Point(404, 45);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 14);
+            this.label32.Size = new System.Drawing.Size(46, 15);
             this.label32.TabIndex = 23;
             this.label32.Text = "Регион";
             // 
             // textBox31
             // 
-            this.textBox31.Location = new System.Drawing.Point(270, 59);
+            this.textBox31.Location = new System.Drawing.Point(272, 62);
             this.textBox31.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(178, 20);
+            this.textBox31.Size = new System.Drawing.Size(178, 21);
             this.textBox31.TabIndex = 22;
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(406, 3);
+            this.label33.Location = new System.Drawing.Point(401, 3);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(44, 14);
+            this.label33.Size = new System.Drawing.Size(49, 15);
             this.label33.TabIndex = 21;
             this.label33.Text = "Страна";
             // 
             // textBox32
             // 
-            this.textBox32.Location = new System.Drawing.Point(270, 19);
+            this.textBox32.Location = new System.Drawing.Point(272, 21);
             this.textBox32.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(178, 20);
+            this.textBox32.Size = new System.Drawing.Size(178, 21);
             this.textBox32.TabIndex = 20;
             // 
             // textBox33
             // 
-            this.textBox33.Location = new System.Drawing.Point(2, 19);
+            this.textBox33.Location = new System.Drawing.Point(4, 20);
             this.textBox33.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(137, 20);
+            this.textBox33.Size = new System.Drawing.Size(137, 21);
             this.textBox33.TabIndex = 19;
             // 
             // buttonAddTravelAgency
             // 
-            this.buttonAddTravelAgency.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddTravelAgency.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAddTravelAgency.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAddTravelAgency.Location = new System.Drawing.Point(4, 527);
             this.buttonAddTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1215,7 +1232,7 @@ namespace Travel_Company
             // 
             // buttonClearStrTravelAgency
             // 
-            this.buttonClearStrTravelAgency.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStrTravelAgency.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClearStrTravelAgency.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClearStrTravelAgency.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1229,16 +1246,16 @@ namespace Travel_Company
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(2, 3);
+            this.label34.Location = new System.Drawing.Point(7, 3);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(124, 14);
+            this.label34.Size = new System.Drawing.Size(132, 15);
             this.label34.TabIndex = 7;
             this.label34.Text = "Название турагенства";
             // 
             // buttonSearchTravelAgency
             // 
-            this.buttonSearchTravelAgency.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchTravelAgency.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSearchTravelAgency.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearchTravelAgency.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchTravelAgency.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1251,10 +1268,11 @@ namespace Travel_Company
             // 
             // buttonReload
             // 
-            this.buttonReload.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonReload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonReload.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonReload.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonReload.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonReload.Location = new System.Drawing.Point(279, 30);
+            this.buttonReload.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonReload.Location = new System.Drawing.Point(1038, 30);
             this.buttonReload.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonReload.Name = "buttonReload";
             this.buttonReload.Size = new System.Drawing.Size(72, 21);
@@ -1293,7 +1311,7 @@ namespace Travel_Company
             this.panelTourOperator.Controls.Add(this.buttonClearStrTourOperator);
             this.panelTourOperator.Controls.Add(this.label42);
             this.panelTourOperator.Controls.Add(this.buttonSearchTourOperator);
-            this.panelTourOperator.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelTourOperator.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelTourOperator.Location = new System.Drawing.Point(754, 56);
             this.panelTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelTourOperator.Name = "panelTourOperator";
@@ -1307,21 +1325,21 @@ namespace Travel_Company
             this.label43.Location = new System.Drawing.Point(4, 82);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(101, 14);
+            this.label43.Size = new System.Drawing.Size(113, 15);
             this.label43.TabIndex = 40;
             this.label43.Text = "Процент надбавки";
             // 
             // textBox42
             // 
-            this.textBox42.Location = new System.Drawing.Point(2, 98);
+            this.textBox42.Location = new System.Drawing.Point(4, 100);
             this.textBox42.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(137, 20);
+            this.textBox42.Size = new System.Drawing.Size(137, 21);
             this.textBox42.TabIndex = 39;
             // 
             // buttonDeletedTourOperator
             // 
-            this.buttonDeletedTourOperator.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedTourOperator.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonDeletedTourOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletedTourOperator.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1335,158 +1353,158 @@ namespace Travel_Company
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(408, 163);
+            this.label27.Location = new System.Drawing.Point(408, 166);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(37, 14);
+            this.label27.Size = new System.Drawing.Size(42, 15);
             this.label27.TabIndex = 37;
             this.label27.Text = "Улица";
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(270, 178);
+            this.textBox26.Location = new System.Drawing.Point(272, 184);
             this.textBox26.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(178, 20);
+            this.textBox26.Size = new System.Drawing.Size(178, 21);
             this.textBox26.TabIndex = 36;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(402, 82);
+            this.label35.Location = new System.Drawing.Point(401, 82);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(45, 14);
+            this.label35.Size = new System.Drawing.Size(49, 15);
             this.label35.TabIndex = 35;
             this.label35.Text = "Индекс";
             // 
             // textBox34
             // 
-            this.textBox34.Location = new System.Drawing.Point(270, 139);
+            this.textBox34.Location = new System.Drawing.Point(272, 142);
             this.textBox34.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(178, 20);
+            this.textBox34.Size = new System.Drawing.Size(178, 21);
             this.textBox34.TabIndex = 34;
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(410, 241);
+            this.label36.Location = new System.Drawing.Point(412, 250);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(35, 14);
+            this.label36.Size = new System.Drawing.Size(38, 15);
             this.label36.TabIndex = 31;
             this.label36.Text = "Офис";
             // 
             // textBox35
             // 
-            this.textBox35.Location = new System.Drawing.Point(358, 258);
+            this.textBox35.Location = new System.Drawing.Point(360, 268);
             this.textBox35.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(90, 20);
+            this.textBox35.Size = new System.Drawing.Size(90, 21);
             this.textBox35.TabIndex = 30;
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(416, 201);
+            this.label37.Location = new System.Drawing.Point(419, 208);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(29, 14);
+            this.label37.Size = new System.Drawing.Size(31, 15);
             this.label37.TabIndex = 29;
             this.label37.Text = "Дом";
             // 
             // textBox36
             // 
-            this.textBox36.Location = new System.Drawing.Point(358, 218);
+            this.textBox36.Location = new System.Drawing.Point(360, 226);
             this.textBox36.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(90, 20);
+            this.textBox36.Size = new System.Drawing.Size(90, 21);
             this.textBox36.TabIndex = 28;
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(4, 43);
+            this.label38.Location = new System.Drawing.Point(4, 41);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(50, 14);
+            this.label38.Size = new System.Drawing.Size(57, 15);
             this.label38.TabIndex = 27;
             this.label38.Text = "Телефон";
             // 
             // textBox37
             // 
-            this.textBox37.Location = new System.Drawing.Point(2, 59);
+            this.textBox37.Location = new System.Drawing.Point(4, 58);
             this.textBox37.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(137, 20);
+            this.textBox37.Size = new System.Drawing.Size(137, 21);
             this.textBox37.TabIndex = 26;
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(410, 123);
+            this.label39.Location = new System.Drawing.Point(409, 124);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(36, 14);
+            this.label39.Size = new System.Drawing.Size(41, 15);
             this.label39.TabIndex = 25;
             this.label39.Text = "Город";
             // 
             // textBox38
             // 
-            this.textBox38.Location = new System.Drawing.Point(270, 98);
+            this.textBox38.Location = new System.Drawing.Point(272, 100);
             this.textBox38.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(178, 20);
+            this.textBox38.Size = new System.Drawing.Size(178, 21);
             this.textBox38.TabIndex = 24;
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(404, 42);
+            this.label40.Location = new System.Drawing.Point(404, 41);
             this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(41, 14);
+            this.label40.Size = new System.Drawing.Size(46, 15);
             this.label40.TabIndex = 23;
             this.label40.Text = "Регион";
             // 
             // textBox39
             // 
-            this.textBox39.Location = new System.Drawing.Point(270, 59);
+            this.textBox39.Location = new System.Drawing.Point(272, 58);
             this.textBox39.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(178, 20);
+            this.textBox39.Size = new System.Drawing.Size(178, 21);
             this.textBox39.TabIndex = 22;
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(406, 3);
+            this.label41.Location = new System.Drawing.Point(401, 1);
             this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(44, 14);
+            this.label41.Size = new System.Drawing.Size(49, 15);
             this.label41.TabIndex = 21;
             this.label41.Text = "Страна";
             // 
             // textBox40
             // 
-            this.textBox40.Location = new System.Drawing.Point(270, 19);
+            this.textBox40.Location = new System.Drawing.Point(272, 17);
             this.textBox40.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(178, 20);
+            this.textBox40.Size = new System.Drawing.Size(178, 21);
             this.textBox40.TabIndex = 20;
             // 
             // textBox41
             // 
-            this.textBox41.Location = new System.Drawing.Point(2, 19);
+            this.textBox41.Location = new System.Drawing.Point(4, 17);
             this.textBox41.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(137, 20);
+            this.textBox41.Size = new System.Drawing.Size(137, 21);
             this.textBox41.TabIndex = 19;
             // 
             // buttonAddlTourOperator
             // 
-            this.buttonAddlTourOperator.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddlTourOperator.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAddlTourOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAddlTourOperator.Location = new System.Drawing.Point(4, 527);
             this.buttonAddlTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1499,7 +1517,7 @@ namespace Travel_Company
             // 
             // buttonClearStrTourOperator
             // 
-            this.buttonClearStrTourOperator.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStrTourOperator.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClearStrTourOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClearStrTourOperator.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1513,16 +1531,16 @@ namespace Travel_Company
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(2, 3);
+            this.label42.Location = new System.Drawing.Point(4, 1);
             this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(125, 14);
+            this.label42.Size = new System.Drawing.Size(137, 15);
             this.label42.TabIndex = 7;
             this.label42.Text = "Название туроератора";
             // 
             // buttonSearchTourOperator
             // 
-            this.buttonSearchTourOperator.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchTourOperator.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSearchTourOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearchTourOperator.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchTourOperator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1540,16 +1558,16 @@ namespace Travel_Company
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 56);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 25);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.Size = new System.Drawing.Size(732, 600);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 768);
             this.dataGridView1.TabIndex = 42;
             // 
             // panelService
@@ -1570,7 +1588,7 @@ namespace Travel_Company
             this.panelService.Controls.Add(this.buttonClearStrService);
             this.panelService.Controls.Add(this.label53);
             this.panelService.Controls.Add(this.buttonSearchService);
-            this.panelService.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelService.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelService.Location = new System.Drawing.Point(754, 56);
             this.panelService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelService.Name = "panelService";
@@ -1581,42 +1599,42 @@ namespace Travel_Company
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(346, 5);
+            this.label45.Location = new System.Drawing.Point(337, 3);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(99, 14);
+            this.label45.Size = new System.Drawing.Size(113, 15);
             this.label45.TabIndex = 42;
             this.label45.Text = "Номер для поиска";
             // 
             // textBox44
             // 
-            this.textBox44.Location = new System.Drawing.Point(307, 19);
+            this.textBox44.Location = new System.Drawing.Point(310, 19);
             this.textBox44.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(140, 20);
+            this.textBox44.Size = new System.Drawing.Size(140, 21);
             this.textBox44.TabIndex = 41;
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(2, 79);
+            this.label44.Location = new System.Drawing.Point(2, 85);
             this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(131, 28);
+            this.label44.Size = new System.Drawing.Size(141, 30);
             this.label44.TabIndex = 40;
             this.label44.Text = "Количество продданых \r\nэкскурсий";
             // 
             // textBox43
             // 
-            this.textBox43.Location = new System.Drawing.Point(2, 107);
+            this.textBox43.Location = new System.Drawing.Point(2, 118);
             this.textBox43.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(99, 20);
+            this.textBox43.Size = new System.Drawing.Size(137, 21);
             this.textBox43.TabIndex = 39;
             // 
             // buttonDeletedService
             // 
-            this.buttonDeletedService.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedService.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonDeletedService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletedService.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1630,19 +1648,19 @@ namespace Travel_Company
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(-1, 42);
+            this.label49.Location = new System.Drawing.Point(2, 43);
             this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(108, 14);
+            this.label49.Size = new System.Drawing.Size(115, 15);
             this.label49.TabIndex = 27;
             this.label49.Text = "Номер турагенства";
             // 
             // textBox48
             // 
-            this.textBox48.Location = new System.Drawing.Point(2, 56);
+            this.textBox48.Location = new System.Drawing.Point(2, 61);
             this.textBox48.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(137, 20);
+            this.textBox48.Size = new System.Drawing.Size(137, 21);
             this.textBox48.TabIndex = 26;
             // 
             // textBox52
@@ -1650,12 +1668,12 @@ namespace Travel_Company
             this.textBox52.Location = new System.Drawing.Point(2, 19);
             this.textBox52.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(137, 20);
+            this.textBox52.Size = new System.Drawing.Size(137, 21);
             this.textBox52.TabIndex = 19;
             // 
             // buttonAddService
             // 
-            this.buttonAddService.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddService.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAddService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAddService.Location = new System.Drawing.Point(4, 527);
             this.buttonAddService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1668,7 +1686,7 @@ namespace Travel_Company
             // 
             // buttonClearStrService
             // 
-            this.buttonClearStrService.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStrService.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClearStrService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClearStrService.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1685,13 +1703,13 @@ namespace Travel_Company
             this.label53.Location = new System.Drawing.Point(2, 3);
             this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(95, 14);
+            this.label53.Size = new System.Drawing.Size(105, 15);
             this.label53.TabIndex = 7;
             this.label53.Text = "Номер экскурсии";
             // 
             // buttonSearchService
             // 
-            this.buttonSearchService.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchService.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSearchService.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearchService.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchService.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1717,7 +1735,7 @@ namespace Travel_Company
             this.panelProvides.Controls.Add(this.buttonClearStrProvides);
             this.panelProvides.Controls.Add(this.label51);
             this.panelProvides.Controls.Add(this.buttonSearchProvides);
-            this.panelProvides.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelProvides.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelProvides.Location = new System.Drawing.Point(754, 56);
             this.panelProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelProvides.Name = "panelProvides";
@@ -1731,10 +1749,10 @@ namespace Travel_Company
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(346, 5);
+            this.label47.Location = new System.Drawing.Point(337, 3);
             this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(99, 14);
+            this.label47.Size = new System.Drawing.Size(113, 15);
             this.label47.TabIndex = 42;
             this.label47.Text = "Номер для поиска";
             // 
@@ -1743,15 +1761,15 @@ namespace Travel_Company
             this.textBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox46.Location = new System.Drawing.Point(307, 19);
+            this.textBox46.Location = new System.Drawing.Point(310, 19);
             this.textBox46.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(140, 20);
+            this.textBox46.Size = new System.Drawing.Size(140, 21);
             this.textBox46.TabIndex = 41;
             // 
             // buttonDeletedProvides
             // 
-            this.buttonDeletedProvides.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedProvides.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonDeletedProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletedProvides.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1768,10 +1786,10 @@ namespace Travel_Company
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(2, 41);
+            this.label50.Location = new System.Drawing.Point(2, 43);
             this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(115, 14);
+            this.label50.Size = new System.Drawing.Size(127, 15);
             this.label50.TabIndex = 27;
             this.label50.Text = "Номер туроператора";
             // 
@@ -1780,10 +1798,10 @@ namespace Travel_Company
             this.textBox49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox49.Location = new System.Drawing.Point(2, 55);
+            this.textBox49.Location = new System.Drawing.Point(2, 61);
             this.textBox49.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(137, 20);
+            this.textBox49.Size = new System.Drawing.Size(137, 21);
             this.textBox49.TabIndex = 26;
             // 
             // textBox50
@@ -1794,12 +1812,12 @@ namespace Travel_Company
             this.textBox50.Location = new System.Drawing.Point(2, 19);
             this.textBox50.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(137, 20);
+            this.textBox50.Size = new System.Drawing.Size(137, 21);
             this.textBox50.TabIndex = 19;
             // 
             // buttonAddProvides
             // 
-            this.buttonAddProvides.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddProvides.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAddProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAddProvides.Location = new System.Drawing.Point(4, 527);
             this.buttonAddProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1812,7 +1830,7 @@ namespace Travel_Company
             // 
             // buttonClearStrProvides
             // 
-            this.buttonClearStrProvides.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStrProvides.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClearStrProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClearStrProvides.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStrProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1832,13 +1850,13 @@ namespace Travel_Company
             this.label51.Location = new System.Drawing.Point(2, 3);
             this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(80, 14);
+            this.label51.Size = new System.Drawing.Size(89, 15);
             this.label51.TabIndex = 7;
             this.label51.Text = "Номер Service";
             // 
             // buttonSearchProvides
             // 
-            this.buttonSearchProvides.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchProvides.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSearchProvides.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearchProvides.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchProvides.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1864,7 +1882,7 @@ namespace Travel_Company
             this.panelPromotes.Controls.Add(this.buttonClearStr);
             this.panelPromotes.Controls.Add(this.label54);
             this.panelPromotes.Controls.Add(this.buttonSearchPromotes);
-            this.panelPromotes.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelPromotes.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelPromotes.Location = new System.Drawing.Point(754, 56);
             this.panelPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelPromotes.Name = "panelPromotes";
@@ -1878,10 +1896,10 @@ namespace Travel_Company
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(346, 5);
+            this.label48.Location = new System.Drawing.Point(337, 5);
             this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(99, 14);
+            this.label48.Size = new System.Drawing.Size(113, 15);
             this.label48.TabIndex = 42;
             this.label48.Text = "Номер для поиска";
             // 
@@ -1890,15 +1908,15 @@ namespace Travel_Company
             this.textBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox47.Location = new System.Drawing.Point(307, 19);
+            this.textBox47.Location = new System.Drawing.Point(310, 24);
             this.textBox47.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(140, 20);
+            this.textBox47.Size = new System.Drawing.Size(140, 21);
             this.textBox47.TabIndex = 41;
             // 
             // buttonDeletedPromotes
             // 
-            this.buttonDeletedPromotes.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonDeletedPromotes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonDeletedPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletedPromotes.Location = new System.Drawing.Point(170, 557);
             this.buttonDeletedPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1915,10 +1933,10 @@ namespace Travel_Company
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(2, 41);
+            this.label52.Location = new System.Drawing.Point(6, 47);
             this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(85, 14);
+            this.label52.Size = new System.Drawing.Size(91, 15);
             this.label52.TabIndex = 27;
             this.label52.Text = "Номер туриста";
             // 
@@ -1927,10 +1945,10 @@ namespace Travel_Company
             this.textBox51.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox51.Location = new System.Drawing.Point(2, 55);
+            this.textBox51.Location = new System.Drawing.Point(4, 66);
             this.textBox51.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(137, 20);
+            this.textBox51.Size = new System.Drawing.Size(137, 21);
             this.textBox51.TabIndex = 26;
             // 
             // textBox53
@@ -1938,15 +1956,15 @@ namespace Travel_Company
             this.textBox53.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox53.Location = new System.Drawing.Point(2, 19);
+            this.textBox53.Location = new System.Drawing.Point(4, 23);
             this.textBox53.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(137, 20);
+            this.textBox53.Size = new System.Drawing.Size(137, 21);
             this.textBox53.TabIndex = 19;
             // 
             // buttonAddPromotes
             // 
-            this.buttonAddPromotes.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAddPromotes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAddPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAddPromotes.Location = new System.Drawing.Point(4, 527);
             this.buttonAddPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1959,7 +1977,7 @@ namespace Travel_Company
             // 
             // buttonClearStr
             // 
-            this.buttonClearStr.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonClearStr.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClearStr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonClearStr.Location = new System.Drawing.Point(289, 557);
             this.buttonClearStr.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -1976,16 +1994,16 @@ namespace Travel_Company
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(2, 3);
+            this.label54.Location = new System.Drawing.Point(6, 5);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(80, 14);
+            this.label54.Size = new System.Drawing.Size(89, 15);
             this.label54.TabIndex = 7;
             this.label54.Text = "Номер Service";
             // 
             // buttonSearchPromotes
             // 
-            this.buttonSearchPromotes.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonSearchPromotes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSearchPromotes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearchPromotes.Location = new System.Drawing.Point(4, 557);
             this.buttonSearchPromotes.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -2001,7 +2019,7 @@ namespace Travel_Company
             this.panelDefault.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDefault.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panelDefault.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelDefault.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panelDefault.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelDefault.Location = new System.Drawing.Point(754, 56);
             this.panelDefault.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelDefault.Name = "panelDefault";
@@ -2009,29 +2027,198 @@ namespace Travel_Company
             this.panelDefault.TabIndex = 44;
             this.panelDefault.Visible = false;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Location = new System.Drawing.Point(4, 99);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(161, 26);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Найти строку";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(289, 99);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(161, 26);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Очистить поля для ввода";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(170, 99);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 26);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "Удалить";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.panel1.Location = new System.Drawing.Point(754, 652);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(456, 132);
+            this.panel1.TabIndex = 43;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Location = new System.Drawing.Point(170, 5);
+            this.button10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(112, 26);
+            this.button10.TabIndex = 46;
+            this.button10.Text = "Удалить";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button11.Location = new System.Drawing.Point(289, 5);
+            this.button11.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(161, 26);
+            this.button11.TabIndex = 45;
+            this.button11.Text = "Добавить строку";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button12.Location = new System.Drawing.Point(4, 5);
+            this.button12.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(161, 26);
+            this.button12.TabIndex = 44;
+            this.button12.Text = "Добавить строку";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Location = new System.Drawing.Point(170, 37);
+            this.button9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(112, 26);
+            this.button9.TabIndex = 43;
+            this.button9.Text = "Удалить";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Location = new System.Drawing.Point(170, 69);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(112, 26);
+            this.button8.TabIndex = 42;
+            this.button8.Text = "Удалить";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Location = new System.Drawing.Point(289, 37);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(161, 26);
+            this.button6.TabIndex = 41;
+            this.button6.Text = "Добавить строку";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Location = new System.Drawing.Point(289, 69);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(161, 26);
+            this.button7.TabIndex = 40;
+            this.button7.Text = "Добавить строку";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Location = new System.Drawing.Point(4, 37);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(161, 26);
+            this.button5.TabIndex = 39;
+            this.button5.Text = "Добавить строку";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(4, 69);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(161, 26);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Добавить строку";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1221, 677);
+            this.ClientSize = new System.Drawing.Size(1221, 814);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonReload);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panelProvides);
             this.Controls.Add(this.panelService);
+            this.Controls.Add(this.panelProvides);
             this.Controls.Add(this.panelTourOperator);
-            this.Controls.Add(this.panelExcursion);
             this.Controls.Add(this.panelTravelAgency);
+            this.Controls.Add(this.panelExcursion);
             this.Controls.Add(this.panelTourist);
             this.Controls.Add(this.panelPromotes);
             this.Controls.Add(this.panelDefault);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.MinimumSize = new System.Drawing.Size(1092, 716);
+            this.MinimumSize = new System.Drawing.Size(1237, 853);
             this.Name = "FormMain";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
@@ -2058,6 +2245,7 @@ namespace Travel_Company
             this.panelProvides.PerformLayout();
             this.panelPromotes.ResumeLayout(false);
             this.panelPromotes.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2228,5 +2416,18 @@ namespace Travel_Company
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
         private System.Windows.Forms.ToolStripMenuItem ButtonInfo;
         private System.Windows.Forms.ToolStripMenuItem ButtonUpdateApp;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button5;
     }
 }

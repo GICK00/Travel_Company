@@ -5,11 +5,14 @@ using System.Data.SqlClient;
 using System.Net;
 using System.Windows.Forms;
 
+// 456; 590
+// 754; 56
+
 namespace Travel_Company
 {
     public partial class FormMain : Form
     {
-        public string ver = "Ver. Alpha 0.8.0 T_C";
+        public string ver = "Ver. Alpha 0.9.0 T_C";
 
         public static SqlConnection connection = new SqlConnection(Properties.Settings.Default.connString);
         readonly Interaction.InteractionData interactionData = new Interaction.InteractionData();
@@ -98,6 +101,7 @@ namespace Travel_Company
             foreach (var ctrl in this.Controls)
                 if (ctrl is Panel) (ctrl as Panel).Visible = false;
             panelDefault.Visible = true;
+            panel1.Visible = true;
             switch (comboBox.Text)
             {
                 case "Tourist":

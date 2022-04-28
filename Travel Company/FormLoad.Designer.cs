@@ -40,7 +40,7 @@ namespace Travel_Company
             // progressBar
             // 
             this.progressBar.ForeColor = System.Drawing.Color.Chartreuse;
-            this.progressBar.Location = new System.Drawing.Point(12, 28);
+            this.progressBar.Location = new System.Drawing.Point(11, 28);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(271, 23);
             this.progressBar.TabIndex = 0;
@@ -48,19 +48,19 @@ namespace Travel_Company
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(13, 9);
+            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 14);
+            this.label1.Size = new System.Drawing.Size(95, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Подключение...";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Travel_Company.Properties.Resources.N2U_b_haa_Trim_копия;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 59);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 59);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(271, 120);
+            this.pictureBox1.Size = new System.Drawing.Size(303, 134);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -70,7 +70,7 @@ namespace Travel_Company
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(295, 189);
+            this.ClientSize = new System.Drawing.Size(291, 190);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);

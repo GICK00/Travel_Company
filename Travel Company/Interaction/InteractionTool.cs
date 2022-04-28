@@ -1,6 +1,4 @@
-﻿using System;
-using System.Data.SqlClient;
-using System.Text;
+﻿using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Travel_Company.Interaction
@@ -11,28 +9,8 @@ namespace Travel_Company.Interaction
         {
             if (Program.formMain.Test() != true) return;
             if (Program.formMain.LoginAdmin() != true) return;
-            if (Program.formMain.openFileDialogSQL.ShowDialog() == DialogResult.Cancel) return;
-            try
-            {
-                string filename = Program.formMain.openFileDialogSQL.FileName;
-                string sql = System.IO.File.ReadAllText(filename, Encoding.GetEncoding(1251));
-
-                using (SqlCommand sqlCommand = new SqlCommand(sql, FormMain.connection))
-                {
-                    FormMain.connection.Open();
-                    sqlCommand.ExecuteNonQuery();
-                }
-                Program.formMain.toolStripStatusLabel2.Text = "Запрос выполнен";
-            }
-            catch (Exception ex)
-            {
-                Program.formMain.toolStripStatusLabel2.Text = $"Запрос не выполнен! Ошибка {ex.Message}";
-            }
-            finally
-            {
-                FormMain.connection.Close();
-                Program.formMain.Reload(Program.formMain.comboBox.Text);
-            }
+            FormRequest formRequest = new FormRequest();
+            formRequest.ShowDialog();  
         }
 
         public void очиститьБазуДанныхToolStripMenuItem()
